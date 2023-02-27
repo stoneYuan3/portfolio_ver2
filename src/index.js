@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { App } from './App';
 import { Gallery, AboutMe, Resume } from './pages/pages';
+import { worklist_program,worklist_art } from './pages/galleryWorkPreview';
 
 import {
   BrowserRouter,
@@ -12,15 +13,16 @@ import {
   Route
 } from "react-router-dom";
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
 
     <Routes>
-      <Route path="/" element={<App content={<Gallery />}/>} />
-      <Route path="/about" element={<App content={<AboutMe />}/>} />
-      <Route path="/resume" element={<App content={<Resume />}/>} />
+      <Route path="/" element={<App content={<Gallery content={worklist_program} />} />} />
+      <Route path="/gallery/artwork" element={<App content={<Gallery content={worklist_art} />} />} />
+
+      <Route path="/about" element={<App content={<AboutMe />} />} />
+      <Route path="/resume" element={<App content={<Resume />} />} />
 
     </Routes>
 

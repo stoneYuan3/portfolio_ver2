@@ -33,3 +33,14 @@ export const NavMain = () => {
         </header>
     );
 }
+
+
+export const NavGallery = () => {
+    return(
+        <div className="flex flex-row" id="react-nav-gallery">
+            <Link to="/" className="style-selected">Programming Related</Link>
+            <Link to="/gallery/uiux">UI/UX Design</Link>
+            <Link to="/gallery/artwork">Artworks</Link>
+        </div>
+    )
+}
