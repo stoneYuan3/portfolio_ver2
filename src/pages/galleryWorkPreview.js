@@ -2,7 +2,7 @@
 export const worklist_program = [
     {
       link: '/work/riskmap',
-      image: 'img/banner-riskmap.png',
+      image: '/img/banner-riskmap.png',
       title: '529 Garage Risk Map Project',
       type: 'Full Stack Website',
       skill: 'HTML | CSS | JQuery | PHP | MySQL',
@@ -10,7 +10,7 @@ export const worklist_program = [
     },
     {
       link: '/work/garage',
-      image: 'img/banner-garage.png',
+      image: '/img/banner-garage.png',
       title: 'Garage, Artwork Sharing Platform',
       type: 'Full Stack Website',
       skill: 'HTML | CSS | JQuery | PHP | MySQL',
@@ -18,7 +18,7 @@ export const worklist_program = [
     },
     {
       link: '/work/edusim',
-      image: 'img/banner-edusim.png',
+      image: '/img/banner-edusim.png',
       title: 'PRC Education Simulator',
       type: 'Java Mini Game',
       skill: 'Java',
@@ -29,7 +29,7 @@ export const worklist_program = [
   export const worklist_art = [
     {
       link: '/work/isaBanner',
-      image: 'img/banner-isaBanners.png',
+      image: '/img/banner-isaBanners.png',
       title: 'Research Institute Website Banners',
       type: 'Graphic Design',
       skill: 'Photoshop',
@@ -37,7 +37,7 @@ export const worklist_program = [
     },
     {
       link: '/work/cmcSermon',
-      image: 'img/banner-cmcSermon.png',
+      image: '/img/banner-cmcSermon.png',
       title: 'Church Sunday Sermon Posters',
       type: 'Graphic Design',
       skill: 'Photoshop | Illustrator | Tablet Drawing',
