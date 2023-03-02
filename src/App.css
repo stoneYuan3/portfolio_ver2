@@ -113,10 +113,11 @@ html{
 
 .button-general{
     border-radius: 1rem;
-    padding:0.5rem 1rem;
+    padding:0.5rem 1.5rem;
     background-color: #191919;
     color: white;
     width: fit-content;
+    /* margin-bottom: 2rem; */
 }
 
 .section-galleryWork .p-type{
@@ -167,6 +168,15 @@ html{
 }
 .logo p{
     font-weight: bold;
+}
+
+
+footer{
+    margin-top: 1rem;
+}
+footer p{
+    /* font-size: 0.75rem; */
+    color: gray;
 }
 
 .links-nav{
@@ -232,6 +242,9 @@ html{
     opacity: 0.75;
 }
 
+#banner{
+    margin-top: 2rem;
+}
 
 .section-work{
     flex-wrap: nowrap;
@@ -271,7 +284,7 @@ html{
     font-size: 2rem;
 }
 
-.section-work-gallery img{
+.section-work-gallery div{
     margin-bottom: 1.5rem;
 }
 

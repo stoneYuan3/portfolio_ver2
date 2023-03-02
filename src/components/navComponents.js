@@ -40,10 +40,10 @@ export const NavMain = () => {
         <header className="flex" id="react_nav">
             <nav className="flex">
                 <div className="logo">
-                    <a href="index.html">
+                    <Link onClick={() => setPage("gallery")} to="/">
                         <img src="/img/base/logo.svg" />
                         <p>Shucong Yuan</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="flex links-nav">
@@ -62,6 +62,7 @@ export const NavMain = () => {
                     <a className="flex flex-align-center" href="https://www.linkedin.com/in/jack-yuan-10a269222/"><img src="/img/base/link-linkedin.svg" /></a>
                 </div>
             </nav>
+
         </header>
     );
 }
@@ -95,20 +96,47 @@ function setNavSideUI(currentPage,setPage){
     }
 }
 
-export const NavGallery = () => {
+export const NavGallery = (props) => {
 
-    const initState = {
-        programming:true,
-        uiux:false,
-        graphic:false
+    var initState={};
+    switch(props.page){
+        case "programming":
+            initState = {
+                programming:true,
+                uiux:false,
+                graphic:false
+            }
+            break;
+        case "uiux":
+            initState = {
+                programming:false,
+                uiux:true,
+                graphic:false
+            }
+            break;
+        case "graphic":
+            initState = {
+                programming:false,
+                uiux:false,
+                graphic:true
+            }
+            break;
+        default:
+            initState = {
+                programming:false,
+                uiux:false,
+                graphic:false
+            }   
+            break;
     }
+
     const [currentPage, setPage] = useReducer(setNavSideUI, initState);
 
     return (
         <div className="flex flex-row" id="react-nav-gallery">
             <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
             <Link onClick={() => setPage("uiux")} to="/gallery/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
-            <Link onClick={() => setPage("graphic")} to="/gallery/artwork" className={currentPage.graphic?"style-selected":""}>Artworks</Link>
+            <Link onClick={() => setPage("graphic")} to="/gallery/graphic" className={currentPage.graphic?"style-selected":""}>Artworks</Link>
         </div>
     )
 }

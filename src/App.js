@@ -11,6 +11,9 @@ export function App({content}) {
       <NavMain />
       <section className="flex flex-column section-main">
         {content}
+        <footer>
+          <p>Shucong Yuan @2023 | Portfolio build with React.js</p>
+        </footer>
       </section>
     </div>
 
