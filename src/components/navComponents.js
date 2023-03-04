@@ -49,7 +49,6 @@ export const NavMain = () => {
                 <div className="flex links-nav">
                     <Link onClick={() => setPage("gallery")} to="/" className={currentPage.gallery?"style-selected":""}>Gallery</Link>
                     <Link onClick={() => setPage("about")} to="/about" className={currentPage.about?"style-selected":""}>About Me</Link>
-                    <Link onClick={() => setPage("resume")} to="/resume" className={currentPage.resume?"style-selected":""}>Resume</Link>
                 </div>
 
                 <div className="links-external">

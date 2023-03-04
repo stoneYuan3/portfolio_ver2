@@ -32,8 +32,6 @@ root.render(
       <Route path="/gallery/graphic" element={<App content={<Gallery content={worklist_art} page="graphic" />} />} />
 
       <Route path="/about" element={<App content={<AboutMe />} />} />
-      <Route path="/resume" element={<App content={<Resume />} />} />
-
 
       <Route path="/work/riskmap" element={<App content={<Riskmap />} />} />
       <Route path="/work/garage" element={<App content={<Garage />} />} />
