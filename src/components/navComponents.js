@@ -97,7 +97,7 @@ function setNavSideUI(currentPage,setPage){
 }
 
 export const NavGallery = (props) => {
-
+    console.log(props.page);
     var initState={};
     switch(props.page){
         case "programming":
@@ -136,7 +136,7 @@ export const NavGallery = (props) => {
         <div className="flex flex-row" id="react-nav-gallery">
             <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
             <Link onClick={() => setPage("uiux")} to="/gallery/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
-            <Link onClick={() => setPage("graphic")} to="/gallery/graphic" className={currentPage.graphic?"style-selected":""}>Artworks</Link>
+            <Link onClick={() => setPage("graphic")} to="/gallery/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
         </div>
     )
 }

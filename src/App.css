@@ -256,6 +256,12 @@ footer p{
     line-height: 2rem;
 /*    font-family: "Adobe Garamond Pro";*/
 }
+.p-work-imageCap{
+    font-size: 1rem !important;
+    color:gray;
+    margin-top: 0.5rem;
+    text-align: center;
+}
 .section-work p a{
     text-decoration: underline;
 }
@@ -306,6 +312,30 @@ footer p{
   right: 0;
   width: 100%;
   height: 100%;    
+}
+
+.section-image-2col,.section-image-3col{
+    max-width: 50rem;
+}
+.section-image-2col div{
+    flex:1 1 45%;
+    margin-right: 0.25rem;
+}
+.section-image-2col div img{
+    width: 100%;
+    height: 300px;
+    /* max-height: 300px; */
+    object-fit: cover;
+}
+.section-image-3col div{
+    flex:1 1 25%;
+    margin-right: 0.25rem;
+}
+.section-image-3col img{
+    width: 100%;
+    height: auto;
+    /* max-height: 500px; */
+    object-fit: cover;
 }
 /*//////////////////////////////////////////////////////////////////////*/
 
@@ -370,10 +400,9 @@ footer p{
     .section-work img{
         max-width: 35rem;
     }
-    .section-work p{
+    .section-work p, .section-image-2col,.section-image-3col{
         max-width: 35rem;
     }    
-
     .section-about p{
         margin-right: 8rem;
     }
@@ -426,6 +455,9 @@ footer p{
         flex-wrap: wrap;
         margin-left: 1rem;
     }    
+    .section-image-2col div img{
+        height: 210px;
+    }
 }
 
 /* <775px */
@@ -505,5 +537,8 @@ footer p{
     }
     #work-skill,#work-desc{
         line-height: 2.75rem;
+    }
+    .section-image-2col div img{
+        height: 150px;
     }
 }

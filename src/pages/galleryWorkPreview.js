@@ -26,6 +26,17 @@ export const worklist_program = [
     }
   ];
 
+  export const worklist_uiux = [
+    {
+      link: '/work/gardenCom',
+      image: '/img/banner-communityGarden.png',
+      title: 'Community Garden Network App',
+      type: 'UI/UX design',
+      skill: 'User Interface | User Experience | Figma | Protopie',
+      context: 'School Project, Group, 2022'
+    }
+  ];
+
   export const worklist_art = [
     {
       link: '/work/isaBanner',
