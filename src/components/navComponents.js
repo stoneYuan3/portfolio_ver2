@@ -97,7 +97,6 @@ function setNavSideUI(currentPage,setPage){
 }
 
 export const NavGallery = (props) => {
-    console.log(props.page);
     var initState={};
     switch(props.page){
         case "programming":
