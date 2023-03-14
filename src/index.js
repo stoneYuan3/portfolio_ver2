@@ -12,6 +12,7 @@ import { Garage } from './pages/work_articles/programming/garage';
 import { Edusim } from './pages/work_articles/programming/edusim';
 
 import { GardenCom } from './pages/work_articles/uiux/gardencom';
+import { GarageDesign } from './pages/work_articles/uiux/garageDesign';
 
 import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
@@ -38,6 +39,7 @@ root.render(
       <Route path="/work/edusim" element={<App content={<Edusim />} />} />
 
       <Route path="/work/gardenCom" element={<App content={<GardenCom />} />} />
+      <Route path="/work/garageDesign" element={<App content={<GarageDesign />} />} />
 
       <Route path="/work/cmcSermon" element={<App content={<CmcSermon />} />} />
       <Route path="/work/isaBanner" element={<App content={<IsaBanner />} />} />

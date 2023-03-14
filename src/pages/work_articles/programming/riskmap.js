@@ -16,7 +16,7 @@ export const Riskmap=()=>{
                         linkIcon={"/img/base/link-github.svg"}
                         linkTitle={"View in Github"}
                         workType={"Full Stack Website"}
-                        workSkill={"HTML | CSS | JQuery | PHP | MySQL"}
+                        workSkill={"HTML | CSS | JQuery | PHP | MySQL | Git"}
                         workContext={"School Project, Individual, 2022"}
                     />
                     

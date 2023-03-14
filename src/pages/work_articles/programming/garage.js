@@ -16,7 +16,7 @@ export const Garage=()=>{
                         linkIcon={"/img/base/link-github.svg"}
                         linkTitle={"View in Github"}
                         workType={"Full Stack Website"}
-                        workSkill={"HTML | CSS | JQuery | PHP | MySQL"}
+                        workSkill={"HTML | CSS | JQuery | PHP | MySQL | Git"}
                         workContext={"School Project, Group, 2022"}
                     />
                     
@@ -26,7 +26,7 @@ export const Garage=()=>{
                             This project is the final project of a web development class. Working in a group of three, we are asked to develop a website that displays content, allow users to filter content, allow users to become a member by creating an account, and allow members to have a customized home page.
                             </p>
                             <p>
-                            The website we develop is Garage, a fictional artwork-sharing platform inspired by Artstation where people can share their artworks and any random thoughts, follow other people, collect items, and so on. 
+                            The website we develop is Garage, a fictional artwork-sharing platform based on the layouts I designed for another web design project, where people can share their artworks and any random thoughts, follow other people, collect items, and so on. 
                             </p>
                             <p>
                             Considering the different skill levels of my group members, we assigned different roles to each member where one member focused on HTML/CSS layout, one member focused on creating the database and some server-side functionalities, and I focus on server-side development with PHP.
