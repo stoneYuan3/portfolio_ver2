@@ -5,7 +5,7 @@ export const worklist_program = [
       image: '/img/banner-riskmap.png',
       title: '529 Garage Risk Map Project',
       type: 'Full Stack Website',
-      skill: 'HTML | CSS | JQuery | PHP | MySQL',
+      skill: 'HTML | CSS | JQuery | PHP | MySQL | Git',
       context: 'School Project, Individual, 2022'
     },
     {
@@ -13,7 +13,7 @@ export const worklist_program = [
       image: '/img/banner-garage.png',
       title: 'Garage, Artwork Sharing Platform',
       type: 'Full Stack Website',
-      skill: 'HTML | CSS | JQuery | PHP | MySQL',
+      skill: 'HTML | CSS | JQuery | PHP | MySQL | Git',
       context: 'School Project, Group, 2022'
     },
     {
@@ -34,6 +34,14 @@ export const worklist_program = [
       type: 'UI/UX design',
       skill: 'User Interface | User Experience | Figma | Protopie',
       context: 'School Project, Group, 2022'
+    },
+    {
+      link: '/work/garageDesign',
+      image: '/img/banner-garageDesign.png',
+      title: 'Artwork Sharing Platform Design',
+      type: 'Website Design',
+      skill: 'User Interface | Web Design | Figma',
+      context: 'School Project, Individual, 2022'
     }
   ];
 
