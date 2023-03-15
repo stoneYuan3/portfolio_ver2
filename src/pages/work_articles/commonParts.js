@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const WorkIntro = (props) => {
     return(
-        <>
+        <>  
             <img id="banner" src={props.banner} />
             <a id="link-work-github" className="flex flex-align-center" href={props.linkHref}>
                 <img src={props.linkIcon} />{props.linkTitle}

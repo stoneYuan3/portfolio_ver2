@@ -314,18 +314,32 @@ footer p{
   height: 100%;    
 }
 
-.section-image-2col,.section-image-3col{
+.section-image-2col,.section-image-2col-contain,.section-image-3col{
     max-width: 50rem;
 }
-.section-image-2col div{
+.section-image-2col div,.section-image-2col-contain div{
     flex:1 1 45%;
     margin-right: 0.25rem;
+}
+figcaption{
+    font-size: 1rem;
+    color:gray;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+.section-image-2col figcaption,.section-image-2col-contain figcaption{
+    margin-bottom: 2rem;
 }
 .section-image-2col div img{
     width: 100%;
     height: 300px;
     /* max-height: 300px; */
     object-fit: cover;
+}
+.section-image-2col-contain div img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
 }
 .section-image-3col div{
     flex:1 1 25%;
