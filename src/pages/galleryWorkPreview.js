@@ -28,6 +28,7 @@ const work_edusim =
   context: 'School Project, Individual, 2022'
 };
 
+//UIUX
 const work_gardenCom =
 {
   link: 'gardenCom',
@@ -46,6 +47,8 @@ const work_garageDesign =
   skill: 'User Interface | Web Design | Figma',
   context: 'School Project, Individual, 2022'
 }
+
+//Graphic Design
 const work_isaBanner =
 {
   link: 'isaBanner',
@@ -65,6 +68,16 @@ const work_cmcSermon =
   context: 'Volunteer Project, Individual, 2021'
 }
 
+//filming
+const work_willFaliureFilm =
+{
+  link: 'willFaliureFilm',
+  image: '/img/banner-faliureOfWill.png',
+  title: 'Short Movie "Failure of the Will',
+  type: 'Short Movie',
+  skill: 'Filming | Editing | Premier ',
+  context: 'School Project, individual, 2020'
+}
 
 
 export const worklist_program = [
@@ -86,6 +99,7 @@ export const worklist_art = [
 
 export const worklist_isap = [
   work_gardenCom,
-  work_garage,
-  work_gardenCom
+  work_riskmap,
+  work_cmcSermon,
+  work_willFaliureFilm
 ];

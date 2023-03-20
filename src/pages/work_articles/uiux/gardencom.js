@@ -90,6 +90,9 @@ export const GardenCom = (props) => {
 
                         <p>This inspires us to get into the topic of community building for community gardens. The result we propose is a community garden manager, a platform that helps gardeners to monitor the status of their plants remotely, know who else is in the garden, and reach out for help and organize collective events that build the community.</p>
 
+                        <h2>Reflection</h2>
+                        <p>The most important thing I learned from this project is the importance of organizing field trips and getting real data in a user experience design project. Our trip to those community gardens plus our interviews with real garden users are key for us to realize this new problem space that we didn't realize before. Such new insights helped us to move away from the old idea which didn't work out, and we wouldn't be able to do so without the data we gathered from real users. </p>
+
                     </div>
 
                 </div>

@@ -19,6 +19,8 @@ import { GarageDesign } from './pages/work_articles/uiux/garageDesign';
 import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
 
+import { WillFaliure } from './pages/work_articles/film1';
+
 import {
   BrowserRouter,
   Routes,
@@ -53,6 +55,19 @@ root.render(
       <Route path="/2023isap" element={<Nav homelink="/2023isap"/>}>
         <Route index element={<App content={<GalleryNoNav content={worklist_isap}/>} />} />
         <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="riskmap" element={<App content={<Riskmap backlink="/2023isap" />} />} />
+        <Route path="garage" element={<App content={<Garage backlink="/2023isap" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/2023isap" />} />} />
+
+        <Route path="gardenCom" element={<App content={<GardenCom backlink="/2023isap" />} />} />
+        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2023isap" />} />} />
+
+        <Route path="cmcSermon" element={<App content={<CmcSermon backlink="/2023isap" />} />} />
+        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2023isap" />} />} />
+        
+        <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2023isap" />} />} />
+
       </Route>
 
     </Routes>
