@@ -2,11 +2,11 @@ import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
-export const Edusim=()=>{
+export const Edusim=(props)=>{
     return(
         <>
             <PageTitle title="PRC education simulator" />
-            <BackToGallery link="/" />
+            <BackToGallery link={props.backlink} />
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">

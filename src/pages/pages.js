@@ -37,6 +37,16 @@ export const Gallery = (props) => {
         </>
     );
 }
+export const GalleryNoNav = (props) => {
+    return(
+        <>
+            <PageTitle title="Gallery" />
+            <GalleryContent content={props.content}/>
+            <Outlet />
+        </>
+    );
+}
+
 export const AboutMe = (props) => {
     return(
         <>

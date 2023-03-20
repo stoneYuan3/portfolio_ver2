@@ -3,11 +3,11 @@ import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
-export const GarageDesign = () => {
+export const GarageDesign = (props) => {
     return (
         <>
-            <PageTitle title="529 Garage Risk Map" />
-            <BackToGallery link="/gallery/uiux" />
+            <PageTitle title="Artwork Sharing Platform Design" />
+            <BackToGallery link={props.backlink} />
 
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">

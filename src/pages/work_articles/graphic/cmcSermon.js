@@ -2,11 +2,11 @@ import { WorkIntroNoBanner } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
-export const CmcSermon=()=>{
+export const CmcSermon=(props)=>{
     return(
         <>
             <PageTitle title="Church Sunday Sermon Posters" />
-            <BackToGallery link="/gallery/graphic" />
+            <BackToGallery link={props.backlink} />
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">

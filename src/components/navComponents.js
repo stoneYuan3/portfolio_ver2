@@ -1,6 +1,6 @@
 
 import { useReducer } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
 function setNavMainUI(currentPage,setPage){
@@ -28,7 +28,15 @@ function setNavMainUI(currentPage,setPage){
     }
 }
 
-export const NavMain = () => {
+export const NavMain = (props) => {
+
+    var homelink="";
+    if(props.homelink!=null){
+        homelink=props.homelink;
+    }
+    else{
+        homelink="/";
+    }
 
     const initState = {
         gallery:true,
@@ -37,18 +45,19 @@ export const NavMain = () => {
     }
     const [currentPage, setPage] = useReducer(setNavMainUI, initState);
     return (
+        <>
         <header className="flex" id="react_nav">
             <nav className="flex">
                 <div className="logo">
-                    <Link onClick={() => setPage("gallery")} to="/">
+                    <Link onClick={() => setPage("gallery")} to={homelink}>
                         <img src="/img/base/logo.svg" />
                         <p>Shucong Yuan</p>
                     </Link>
                 </div>
 
                 <div className="flex links-nav">
-                    <Link onClick={() => setPage("gallery")} to="/" className={currentPage.gallery?"style-selected":""}>Gallery</Link>
-                    <Link onClick={() => setPage("about")} to="/about" className={currentPage.about?"style-selected":""}>About Me</Link>
+                    <Link onClick={() => setPage("gallery")} to={homelink} className={currentPage.gallery?"style-selected":""}>Gallery</Link>
+                    <Link onClick={() => setPage("about")} to="about" className={currentPage.about?"style-selected":""}>About Me</Link>
                 </div>
 
                 <div className="links-external">
@@ -61,8 +70,9 @@ export const NavMain = () => {
                     <a className="flex flex-align-center" href="https://www.linkedin.com/in/jack-yuan-10a269222/"><img src="/img/base/link-linkedin.svg" /></a>
                 </div>
             </nav>
-
         </header>
+        <Outlet />
+        </>
     );
 }
 
@@ -133,8 +143,8 @@ export const NavGallery = (props) => {
     return (
         <div className="flex flex-row" id="react-nav-gallery">
             <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
-            <Link onClick={() => setPage("uiux")} to="/gallery/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
-            <Link onClick={() => setPage("graphic")} to="/gallery/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
+            <Link onClick={() => setPage("uiux")} to="/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
+            <Link onClick={() => setPage("graphic")} to="/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
         </div>
     )
 }

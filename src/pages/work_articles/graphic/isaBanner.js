@@ -2,11 +2,11 @@ import { WorkIntroNoBanner } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
-export const IsaBanner=()=>{
+export const IsaBanner=(props)=>{
     return(
         <>
             <PageTitle title="Research Institute Website Banners" />
-            <BackToGallery link="/gallery/graphic" />
+            <BackToGallery link={props.backlink} />
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">

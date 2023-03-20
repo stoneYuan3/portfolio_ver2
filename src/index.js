@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import { App } from './App';
-import { Gallery, AboutMe, Resume } from './pages/pages';
+import { App, Nav } from './App';
+import { Gallery,GalleryNoNav, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
+import { worklist_isap } from './pages/galleryWorkPreview';
+
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
 import { Garage } from './pages/work_articles/programming/garage';
@@ -28,21 +30,30 @@ root.render(
   <BrowserRouter>
 
     <Routes>
-      <Route path="/" element={<App content={<Gallery content={worklist_program} page="programming" />} />} />
-      <Route path="/gallery/uiux" element={<App content={<Gallery content={worklist_uiux} page="uiux" />} />} />
-      <Route path="/gallery/graphic" element={<App content={<Gallery content={worklist_art} page="graphic" />} />} />
+      <Route path="/" element={<Nav />}>
+        <Route index element={<App content={<Gallery content={worklist_program} page="programming" />} />} />
+        
+        <Route path="uiux" element={<App content={<Gallery content={worklist_uiux} page="uiux" />} />} />
+        <Route path="graphic" element={<App content={<Gallery content={worklist_art} page="graphic" />} />} />
 
-      <Route path="/about" element={<App content={<AboutMe />} />} />
+        <Route path="about" element={<App content={<AboutMe />} />} />
 
-      <Route path="/work/riskmap" element={<App content={<Riskmap />} />} />
-      <Route path="/work/garage" element={<App content={<Garage />} />} />
-      <Route path="/work/edusim" element={<App content={<Edusim />} />} />
+        <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
+        <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/" />} />} />
 
-      <Route path="/work/gardenCom" element={<App content={<GardenCom />} />} />
-      <Route path="/work/garageDesign" element={<App content={<GarageDesign />} />} />
+        <Route path="uiux/gardenCom" element={<App content={<GardenCom backlink="/uiux" />} />} />
+        <Route path="uiux/garageDesign" element={<App content={<GarageDesign backlink="/uiux" />} />} />
 
-      <Route path="/work/cmcSermon" element={<App content={<CmcSermon />} />} />
-      <Route path="/work/isaBanner" element={<App content={<IsaBanner />} />} />
+        <Route path="graphic/cmcSermon" element={<App content={<CmcSermon backlink="/graphic" />} />} />
+        <Route path="graphic/isaBanner" element={<App content={<IsaBanner backlink="/graphic" />} />} />
+      </Route>
+
+
+      <Route path="/2023isap" element={<Nav homelink="/2023isap"/>}>
+        <Route index element={<App content={<GalleryNoNav content={worklist_isap}/>} />} />
+        <Route path="about" element={<App content={<AboutMe />} />} />
+      </Route>
 
     </Routes>
 
