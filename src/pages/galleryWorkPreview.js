@@ -73,7 +73,7 @@ const work_willFaliureFilm =
 {
   link: 'willFaliureFilm',
   image: '/img/banner-faliureOfWill.png',
-  title: 'Short Movie "Failure of the Will',
+  title: 'Short Movie "Failure of the Will"',
   type: 'Short Movie',
   skill: 'Filming | Editing | Premier ',
   context: 'School Project, individual, 2020'
