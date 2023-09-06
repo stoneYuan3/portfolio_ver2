@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { App, Nav } from './App';
 import { Gallery,GalleryNoNav, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap } from './pages/galleryWorkPreview';
+import { worklist_isap, worklist_webdev2023 } from './pages/galleryWorkPreview';
 
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
@@ -20,6 +20,10 @@ import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
 
 import { WillFaliure } from './pages/work_articles/film1';
+
+import { JetourMap } from './pages/work_articles/webdev_pmpark/jetourMap';
+import { JetourDemo } from './pages/work_articles/webdev_pmpark/jetourDemo';
+import { WcwlBadge } from './pages/work_articles/webdev_pmpark/wcwlBadge';
 
 import {
   BrowserRouter,
@@ -67,7 +71,15 @@ root.render(
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2023isap" />} />} />
         
         <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2023isap" />} />} />
+      </Route>
 
+      <Route path="/webdev" element={<Nav homelink="/webdev"/>}>
+        <Route index element={<App content={<GalleryNoNav content={worklist_webdev2023}/>} />} />
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
+        <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
+        <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
       </Route>
 
     </Routes>

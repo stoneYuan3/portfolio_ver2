@@ -80,6 +80,35 @@ const work_willFaliureFilm =
 }
 
 
+//2023 webdev including PM Park co-op
+const work_jeTourMap = 
+{
+  link: 'jeTourMap',
+  image: '/img/banner-jetourMap.png',
+  title: 'Jetour Partner Map Development',
+  type: 'Front-end Web Development',
+  skill: 'HTML/CSS | Javascript | Vue.js ',
+  context: 'Internship Project, individual, 2023'
+}
+const work_jeTourDemo1 = 
+{
+  link: 'jeTourDemo',
+  image: '/img/banner-jetourDemo1.png',
+  title: 'Jetour Home Page Demo',
+  type: 'Front-end Web Development',
+  skill: 'HTML/CSS | Javascript ',
+  context: 'Internship Project, individual, 2023'
+}
+const work_wcwlBadge = 
+{
+  link: 'wcwlBadge',
+  image: '/img/banner-wcwlBadge.png',
+  title: 'Chery International Co-Create Campaign',
+  type: 'Front-end Web Development',
+  skill: 'HTML/CSS | Javascript ',
+  context: 'Internship Project, individual, 2023'
+}
+
 export const worklist_program = [
   work_riskmap,
   work_garage,
@@ -103,3 +132,9 @@ export const worklist_isap = [
   work_cmcSermon,
   work_willFaliureFilm
 ];
+
+export const worklist_webdev2023 = [
+  work_jeTourMap,
+  work_jeTourDemo1,
+  work_wcwlBadge
+]
