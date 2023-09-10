@@ -31,15 +31,15 @@ export const WcwlBadge=(props)=>{
                         </div>
                         <div class="sectionList demoHead">
                             <h3>Demo:</h3>
-                            <img src="/img/gallery/pmpark-cheryInternational/wcwlBadge-all.png"/>
+                            <img src="/img/gallery/pmpark-cheryInternational/wcwl/wcwlBadge-all.png"/>
                             <p class="demoComments">Desktop and mobile view</p>
                         </div>
                         <div class="sectionList">
-                        <img src="/img/gallery/pmpark-cheryInternational/desktopFull.png"/>
+                        <img src="/img/gallery/pmpark-cheryInternational/wcwl/demo_desktop.gif"/>
                             <p class="demoComments">Full Desktop View</p>
                         </div>
                         <div class="sectionList">
-                            <img src="/img/gallery/pmpark-jetour/jetourMap3.gif"/>
+                            <img src="/img/gallery/pmpark-cheryInternational/wcwl/demo_mobile.gif"/>
                             <p class="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
                     </div>

@@ -32,12 +32,12 @@ export const JetourDemo=(props)=>{
                         </div>
                         <div class="sectionList demoHead">
                             <h3>Demo:</h3>
-                            <img src="/img/gallery/pmpark-jetour/jetourMap1.gif"/>
-                            <p class="demoComments">Vue.js powered search bar</p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/banner.gif"/>
+                            <p class="demoComments">Banner animation</p>
                         </div>
                         <div class="sectionList">
-                            <img src="/img/gallery/pmpark-jetour/jetourMap2.gif"/>
-                            <p class="demoComments">Mobile layout fix with Swiper.js powered options</p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/allpage.gif"/>
+                            <p class="demoComments">The rest of the page</p>
                         </div>
                     </div>
 

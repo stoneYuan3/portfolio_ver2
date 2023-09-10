@@ -31,15 +31,15 @@ export const JetourMap=(props)=>{
                         </div>
                         <div class="sectionList demoHead">
                             <h3>Demo:</h3>
-                            <img src="/img/gallery/pmpark-jetour/jetourMap1.gif"/>
+                            <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap1.gif"/>
                             <p class="demoComments">Vue.js powered search bar</p>
                         </div>
                         <div class="sectionList">
-                            <img src="/img/gallery/pmpark-jetour/jetourMap2.gif"/>
+                            <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap2.gif"/>
                             <p class="demoComments">Mobile layout fix with Swiper.js powered options</p>
                         </div>
                         <div class="sectionList">
-                            <img src="/img/gallery/pmpark-jetour/jetourMap3.gif"/>
+                            <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap3.gif"/>
                             <p class="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
                     </div>
