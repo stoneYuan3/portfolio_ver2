@@ -138,3 +138,14 @@ export const worklist_webdev2023 = [
   work_jeTourDemo1,
   work_wcwlBadge
 ]
+
+
+export const worklist_playground = [
+  work_gardenCom,
+  work_riskmap,
+  work_cmcSermon,
+  work_willFaliureFilm,
+  work_jeTourMap,
+  work_jeTourDemo1,
+  work_wcwlBadge
+]

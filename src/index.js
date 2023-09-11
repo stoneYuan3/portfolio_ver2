@@ -4,9 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { App, Nav } from './App';
-import { Gallery,GalleryNoNav, AboutMe, Resume } from './pages/pages';
+import { Gallery,GalleryNoNav,Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
 import { worklist_isap, worklist_webdev2023 } from './pages/galleryWorkPreview';
+import { worklist_playground } from './pages/galleryWorkPreview';
 
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
@@ -36,6 +37,10 @@ root.render(
   <BrowserRouter>
 
     <Routes>
+
+      {/* default page set */}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
       <Route path="/" element={<Nav />}>
         <Route index element={<App content={<Gallery content={worklist_program} page="programming" />} />} />
         
@@ -43,6 +48,8 @@ root.render(
         <Route path="graphic" element={<App content={<Gallery content={worklist_art} page="graphic" />} />} />
 
         <Route path="about" element={<App content={<AboutMe />} />} />
+        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+
 
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
@@ -56,6 +63,22 @@ root.render(
       </Route>
 
 
+      {/* front-end web development specific page set*/}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
+      <Route path="/webdev" element={<Nav homelink="/webdev"/>}>
+        <Route index element={<App content={<GalleryNoNav content={worklist_webdev2023}/>} />} />
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
+        <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
+        <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
+      </Route>
+
+
+      {/* page set built specifically for a position in spring 2023 */}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
       <Route path="/2023isap" element={<Nav homelink="/2023isap"/>}>
         <Route index element={<App content={<GalleryNoNav content={worklist_isap}/>} />} />
         <Route path="about" element={<App content={<AboutMe />} />} />
@@ -71,15 +94,6 @@ root.render(
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2023isap" />} />} />
         
         <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2023isap" />} />} />
-      </Route>
-
-      <Route path="/webdev" element={<Nav homelink="/webdev"/>}>
-        <Route index element={<App content={<GalleryNoNav content={worklist_webdev2023}/>} />} />
-        <Route path="about" element={<App content={<AboutMe />} />} />
-
-        <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
-        <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
-        <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
       </Route>
 
     </Routes>

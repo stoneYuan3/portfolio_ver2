@@ -1,4 +1,4 @@
-import { WorkPreview } from "../components/galleryPreview";
+import { WorkPreview, PlaygroundPreview } from "../components/galleryPreview";
 import { NavGallery } from '../components/navComponents';
 import { Link, Outlet } from "react-router-dom";
 
@@ -9,23 +9,50 @@ export const PageTitle = (props) => {
         <h1>{props.title}</h1>
     );
 }
-
-export const GalleryContent = (props) => {
+export const PageTitleWithSub = (props) => {
     return(
-        <div>
-            {props.content.map((each,i) => (
-                <WorkPreview 
-                    key={i}
-                    link={each.link}
-                    image={each.image}
-                    title={each.title}
-                    skill={each.skill}
-                    type={each.type}
-                    context={each.context}    
-                />
-            ))}
+        <div className="titleWithSub">
+            <h1>{props.title}</h1>
+            <p>{props.sub}</p>
         </div>
     );
+}
+
+export const GalleryContent = (props) => {
+    if(props.type=="playground"){
+        return(
+            <div class="playgroundWrapper">
+                {props.content.map((each,i) => (
+                    <PlaygroundPreview 
+                        key={i}
+                        link={each.link}
+                        image={each.image}
+                        title={each.title}
+                        skill={each.skill}
+                        type={each.type}
+                        context={each.context}    
+                    />
+                ))}
+            </div>
+        );
+    }
+    else{
+        return(
+            <div>
+                {props.content.map((each,i) => (
+                    <WorkPreview 
+                        key={i}
+                        link={each.link}
+                        image={each.image}
+                        title={each.title}
+                        skill={each.skill}
+                        type={each.type}
+                        context={each.context}    
+                    />
+                ))}
+            </div>
+        );
+    }
 }
 export const Gallery = (props) => {
     return(
@@ -46,6 +73,19 @@ export const GalleryNoNav = (props) => {
         </>
     );
 }
+
+
+export const Playground = (props) => {
+    return(
+        <div className="playground">
+            <PageTitleWithSub title="Playground" sub="Hobby projects, volunteer projects, everything that I've done in my own time."/>
+            <GalleryContent content={props.content} type="playground"/>
+            <Outlet />
+        </div>
+    );
+}
+
+
 
 export const AboutMe = (props) => {
     return(
