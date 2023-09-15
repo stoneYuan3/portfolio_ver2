@@ -9,20 +9,30 @@ function setNavMainUI(currentPage,setPage){
             return {
                 gallery:true,
                 about:false,
-                resume:false
+                resume:false,
+                playground:false,
             };
         case "about":
             return {
                 gallery:false,
                 about:true,
-                resume:false               
+                resume:false,
+                playground:false,             
             };
         case "resume":
             return {
                 gallery:false,
                 about:false,
-                resume:true               
+                resume:true,
+                playground:false,            
             };    
+        case "playground":
+            return {
+                gallery:false,
+                about:false,
+                resume:false,
+                playground:true,               
+            };   
         default:
             return currentPage;
     }
@@ -58,6 +68,7 @@ export const NavMain = (props) => {
                 <div className="flex links-nav">
                     <Link onClick={() => setPage("gallery")} to={homelink} className={currentPage.gallery?"style-selected":""}>Gallery</Link>
                     <Link onClick={() => setPage("about")} to="about" className={currentPage.about?"style-selected":""}>About Me</Link>
+                    <Link onClick={() => setPage("playground")} to="playground" className={currentPage.playground?"style-selected":""}>Playground</Link>
                 </div>
 
                 <div className="links-external">

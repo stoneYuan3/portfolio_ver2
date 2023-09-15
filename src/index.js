@@ -26,6 +26,11 @@ import { JetourMap } from './pages/work_articles/webdev_pmpark/jetourMap';
 import { JetourDemo } from './pages/work_articles/webdev_pmpark/jetourDemo';
 import { WcwlBadge } from './pages/work_articles/webdev_pmpark/wcwlBadge';
 
+import { BuildingAssetsLogo } from './pages/work_articles/playground/buildingAssetsLogo'
+import { EcbcExhibition } from './pages/work_articles/playground/ecbcExhibition'
+import { FriendSermonPosters } from './pages/work_articles/playground/friendSermonPosters'
+import { ChristianArtistFellowship } from './pages/work_articles/playground/christianArtistFellowship'
+
 import {
   BrowserRouter,
   Routes,
@@ -48,9 +53,15 @@ root.render(
         <Route path="graphic" element={<App content={<Gallery content={worklist_art} page="graphic" />} />} />
 
         <Route path="about" element={<App content={<AboutMe />} />} />
+
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/playground" />} />} />
+        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/playground" />} />} />
+        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/playground" />} />} />
+        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/playground" />} />} />
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} />
 
-
+        
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/" />} />} />
@@ -73,6 +84,14 @@ root.render(
         <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
+
+        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />
+        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/webdev/playground" />} />} />
+        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/webdev/playground" />} />} />
+        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/webdev/playground" />} />} />
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/webdev/playground" />} />} />
+        
       </Route>
 
 

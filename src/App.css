@@ -274,7 +274,7 @@ footer p{
 }
 .section-work img{
     max-width: 60rem;
-    height: 100%;
+    height: auto;
     margin-bottom: 0.5rem;
 }
 .section-work a img{
@@ -294,7 +294,7 @@ footer p{
 }
 .section-work-basics p{
     margin-bottom: 0.75rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 .section-work-gallery div{

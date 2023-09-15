@@ -1,6 +1,7 @@
 import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
+import { WorkIntroNoBanner } from "../commonParts"
 
 export const JetourDemo=(props)=>{
     return(
@@ -11,16 +12,13 @@ export const JetourDemo=(props)=>{
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
+                        <WorkIntroNoBanner 
+                            workType={"Front-end development"}
+                            workSkill={"HTML/CSS, Javascript"}
+                            workContext={"Front-end development Internship project, August 2023"}
+                        />
+
                         <div class="sectionList">
-                            <h3>Type:</h3>
-                            <p>Front-end development Internship project, August 2023</p>
-                        </div>
-                        <div class="sectionList">
-                            <h3>Skills involved:</h3>
-                            <p>HTML/CSS, Javascript</p>
-                        </div>
-                        <div class="sectionList">
-                            <h3>Context:</h3>
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to fix the Vue.js and React.js powered map page of the original Jetour website. The original map page had issues with search bars and broken layout consistency in mobile and different language versions.
                             </p>
                             <p>Added a Vue.js powered search bar and fixed layout glitches in right-to-left language versions and mobile versions with the Swiper.js plugin. </p>

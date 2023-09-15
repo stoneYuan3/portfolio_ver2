@@ -1,6 +1,7 @@
 import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
+import { WorkIntroNoBanner } from "../commonParts"
 
 export const WcwlBadge=(props)=>{
     return(
@@ -11,16 +12,13 @@ export const WcwlBadge=(props)=>{
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
+                        <WorkIntroNoBanner 
+                            workType={"Front-end development"}
+                            workSkill={"HTML/CSS, Javascript"}
+                            workContext={"Front-end development Internship project, August 2023"}
+                        />
+
                         <div class="sectionList">
-                            <h3>Type:</h3>
-                            <p>Front-end development Internship project, August 2023</p>
-                        </div>
-                        <div class="sectionList">
-                            <h3>Skills involved:</h3>
-                            <p>HTML/CSS, Javascript</p>
-                        </div>
-                        <div class="sectionList">
-                            <h3>Context:</h3>
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to develop demos for a new set of Jetour home page designs for client review. Developed the demo with a combination of Swiper.js plugin and CSS animation.
                             </p>
                         </div>

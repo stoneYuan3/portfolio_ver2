@@ -109,6 +109,43 @@ const work_wcwlBadge =
   context: 'Internship Project, individual, 2023'
 }
 
+const playground_buildingAssetsLogo = 
+{
+  link: 'buildingAssetsLogo',
+  image: '/img/BAlogo.png',
+  title: 'Building Assets Logo Design',
+  type: 'Graphic Design',
+  skill: 'Paint Tool SAI 2',
+  context: 'Volunteer Project, individual, 2021'
+}
+const playground_resurrection = 
+{
+  link: 'resurrection',
+  image: '/img/resurrection.jpg ',
+  title: 'Christian Art Exhibition: Resurrection',
+  type: 'Drawing',
+  skill: 'Photoshop',
+  context: 'Recreational Project, individual, 2022'
+}
+const playground_lukeposters = 
+{
+  link: 'friendSermonPosters',
+  image: '/img/banner-lukeposters.png',
+  title: 'Sermon Posters for a Friend',
+  type: 'Graphic Design',
+  skill: 'Photoshop, Illustrator, Figma, MidJourney',
+  context: 'Volunteer Project, individual, 2023'
+}
+const playground_christianArtistFellowship = 
+{
+  link: 'christianArtistFellowship',
+  image: '/img/banner-christianArtFellowship.png',
+  title: 'Christian Artist Fellowship Website Design & Development',
+  type: 'Web Design and Wordpress Web Development',
+  skill: 'Wordpress, Figma',
+  context: 'Volunteer Project, Group, 2023, Ongoing'
+}
+
 export const worklist_program = [
   work_riskmap,
   work_garage,
@@ -141,11 +178,9 @@ export const worklist_webdev2023 = [
 
 
 export const worklist_playground = [
-  work_gardenCom,
-  work_riskmap,
+  playground_christianArtistFellowship,
+  playground_lukeposters,
+  playground_resurrection,
   work_cmcSermon,
-  work_willFaliureFilm,
-  work_jeTourMap,
-  work_jeTourDemo1,
-  work_wcwlBadge
+  playground_buildingAssetsLogo
 ]
