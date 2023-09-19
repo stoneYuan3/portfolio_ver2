@@ -25,6 +25,7 @@ export const WorkIntro = (props) => {
         </>
     );
 }
+
 export const WorkIntroNoLink = (props) => {
     return(
         <>

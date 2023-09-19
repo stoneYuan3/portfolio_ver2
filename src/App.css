@@ -443,6 +443,13 @@ figcaption{
     margin-bottom: 0.5rem;
 }
 
+.linkGroup{
+    margin-top: 2rem;
+}
+.linkGroup img{
+    margin-bottom: 0;
+}
+
 /* <1440px */
 @media screen and (max-width: 90em){
     #section-videoDemo{
