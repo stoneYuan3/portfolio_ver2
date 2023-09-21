@@ -94,9 +94,9 @@ export const AboutMe = (props) => {
             <div className="flex flex-column section-contentDisplay">
                 <section className="flex flex-column section-about">
                     <div className="flex flex-row section-mybio">
-                        <img src="/img/about-portrait.png" />
+                        {/* <img src="/img/about-portrait.png" /> */}
                         <div className="flex flex-column">
-                            <h2>Shucong (Jack) Yuan</h2>
+                            <h2>Jack (Shucong) Yuan</h2>
                             <p><strong>Email: </strong>jack_yuan@sfu.ca (Preferred)</p>
                             <p><strong>Telephone: </strong>778-223-9805</p>
                         </div>

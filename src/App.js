@@ -17,7 +17,7 @@ export function App(props) {
       <section className="flex flex-column section-main">
         {props.content}
         <footer>
-          <p>Shucong Yuan @2023 | Portfolio build with React.js</p>
+          <p>Jack Yuan @2023 | Portfolio build with React.js</p>
         </footer>
       </section>
   );

@@ -61,7 +61,7 @@ export const NavMain = (props) => {
                 <div className="logo">
                     <Link onClick={() => setPage("gallery")} to={homelink}>
                         <img src="/img/base/logo.svg" />
-                        <p>Shucong Yuan</p>
+                        <p>Jack Yuan</p>
                     </Link>
                 </div>
 

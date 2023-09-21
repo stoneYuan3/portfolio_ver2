@@ -362,7 +362,7 @@ figcaption{
 
 
 .section-about p{
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     margin-right: 22rem;
     margin-bottom: 2.5rem;
     font-size: 1.25rem;
@@ -472,7 +472,7 @@ figcaption{
         max-width: 35rem;
     }    
     .section-about p{
-        margin-right: 8rem;
+        /* margin-right: 8rem; */
     }
 
 }
@@ -550,7 +550,7 @@ figcaption{
         margin-right: 2rem;
     }  
     .section-about p{
-        margin-right: 4rem;
+        /* margin-right: 4rem; */
     }    
 }
 
