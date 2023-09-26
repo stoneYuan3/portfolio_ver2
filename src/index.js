@@ -84,6 +84,8 @@ root.render(
         <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
+        <Route path="gardenCom" element={<App content={<GardenCom backlink="/webdev" />} />} />
+        <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />

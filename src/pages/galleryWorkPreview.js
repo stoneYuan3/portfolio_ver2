@@ -173,7 +173,9 @@ export const worklist_isap = [
 export const worklist_webdev2023 = [
   work_jeTourMap,
   work_jeTourDemo1,
-  work_wcwlBadge
+  work_wcwlBadge,
+  work_gardenCom,
+  work_riskmap
 ]
 
 
