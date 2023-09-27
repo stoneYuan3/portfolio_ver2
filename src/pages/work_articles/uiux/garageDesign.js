@@ -17,7 +17,7 @@ export const GarageDesign = (props) => {
                         linkIcon={"/img/base/link-figma.svg"}
                         linkTitle={"View in Figma"}
                         workType={'Website Design'}
-                        workSkill={'User Interface | Web Design | Figma'}
+                        workSkill={'User Interface Design, Web Design, Figma'}
                         workContext={'School Project, Individual, 2022'}
                     />
                     <div id="section-work-body">
