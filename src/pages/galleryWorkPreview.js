@@ -174,13 +174,15 @@ export const worklist_webdev2023 = [
   work_jeTourMap,
   work_jeTourDemo1,
   work_wcwlBadge,
+  work_edusim,
   work_gardenCom,
   work_riskmap
 ]
 export const worklist_design2023 = [
   work_gardenCom,
   work_garageDesign,
-  work_isaBanner
+  work_isaBanner,
+  work_riskmap,
 ]
 
 export const worklist_playground = [

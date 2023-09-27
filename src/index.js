@@ -86,6 +86,7 @@ root.render(
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/webdev" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />
@@ -107,6 +108,9 @@ root.render(
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/design" />} />} />
         <Route path="garageDesign" element={<App content={<GarageDesign backlink="/design" />} />} />
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/design" />} />} />
+
+        <Route path="riskmap" element={<App content={<Riskmap backlink="/design" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/design" />} />} />
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/design/playground" />} />} />
