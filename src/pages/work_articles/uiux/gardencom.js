@@ -23,7 +23,7 @@ export const GardenCom = (props) => {
 
                         <p>This project is the final project of a user experience and interface design course that lasts for 6-7 weeks. It is done with a group of five. The task for this project is to research an industry and develop a digital solution (such as an app) for a problem found in this industry.</p>
 
-                        <p>We choose agriculture and gardening as the industry we want to focus on and the problem we land on is the lack of connection between members in community gardens.</p>
+                        <p>We choose agriculture and gardening as the industry we want to focus on and the problem we land on is the lack of connection between members in community gardens. The final outcome of this project is a prototype of the app done in Protopie and a promotional video for the app.</p>
 
 
                         <h2>Final Outcome Video</h2>
