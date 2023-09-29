@@ -26,7 +26,7 @@ export const Edusim=(props)=>{
                             This project is the final project of a Java introduction course. Working individually, I'm asked to develop a simulator of some kind that uses concepts such as object-oriented programming, polymorphism, collision detection and so on.
                         </p>
                         <p>
-                            The result I developed is a simulator of school life under the rule of the Chinese Communist Party. Other than coding, I also made all the visual elements in the project.
+                            The result I developed is a simulator which simulates school life under the rule of the Chinese Communist Party. Other than coding, I also made all the visual elements in the project.
                         </p>
 
                         <h2>Video Demonstration</h2>

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { App, Nav } from './App';
 import { Gallery,GalleryNoNav,Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap, worklist_webdev2023 } from './pages/galleryWorkPreview';
+import { worklist_isap, worklist_webdev2023, worklist_design2023 } from './pages/galleryWorkPreview';
 import { worklist_playground } from './pages/galleryWorkPreview';
 
 
@@ -86,6 +86,7 @@ root.render(
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/webdev" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />
@@ -93,6 +94,30 @@ root.render(
         <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/webdev/playground" />} />} />
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/webdev/playground" />} />} />
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/webdev/playground" />} />} />
+        
+      </Route>
+
+
+      {/* design portfolio page set*/}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
+      <Route path="/design" element={<Nav homelink="/design"/>}>
+        <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} />
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="gardenCom" element={<App content={<GardenCom backlink="/design" />} />} />
+        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/design" />} />} />
+        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/design" />} />} />
+
+        <Route path="riskmap" element={<App content={<Riskmap backlink="/design" />} />} />
+        <Route path="edusim" element={<App content={<Edusim backlink="/design" />} />} />
+
+        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/design/playground" />} />} />
+        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/design/playground" />} />} />
+        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/design/playground" />} />} />
+        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/design/playground" />} />} />
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/design/playground" />} />} />
         
       </Route>
 

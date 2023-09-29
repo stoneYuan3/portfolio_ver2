@@ -15,7 +15,7 @@ export const WorkIntro = (props) => {
                 </div>
                 <div class="sectionList">
                     <h3>Skills involved:</h3>
-                    <p>Front-end development Internship project, August 2023</p>
+                    <p>{props.workSkill}</p>
                 </div>
                 <div class="sectionList">
                     <h3>Context:</h3>
@@ -37,7 +37,7 @@ export const WorkIntroNoLink = (props) => {
             </div>
             <div class="sectionList">
                 <h3>Skills involved:</h3>
-                <p>Front-end development Internship project, August 2023</p>
+                <p>{props.workSkill}</p>
             </div>
             <div class="sectionList">
                 <h3>Context:</h3>

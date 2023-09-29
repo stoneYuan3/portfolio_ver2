@@ -16,7 +16,7 @@ export const Garage=(props)=>{
                         linkIcon={"/img/base/link-github.svg"}
                         linkTitle={"View in Github"}
                         workType={"Full Stack Website"}
-                        workSkill={"HTML | CSS | JQuery | PHP | MySQL | Git"}
+                        workSkill={"HTML/CSS, JQuery, PHP, MySQL, Git"}
                         workContext={"School Project, Group, 2022"}
                     />
                     

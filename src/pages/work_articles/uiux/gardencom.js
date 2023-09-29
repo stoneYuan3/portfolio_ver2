@@ -13,7 +13,7 @@ export const GardenCom = (props) => {
                     <WorkIntroNoLink
                         banner={"/img/banner-communityGarden.png"}
                         workType={'UI/UX design'}
-                        workSkill={'User Interface | User Experience | Figma | Protopie'}
+                        workSkill={'User Interface Design, User Experience Design, Figma, Protopie'}
                         workContext={'School Project, Group, 2022'}
                     />
 

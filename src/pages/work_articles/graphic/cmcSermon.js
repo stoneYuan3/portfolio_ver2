@@ -12,7 +12,7 @@ export const CmcSermon=(props)=>{
                 <div className="flex flex-column section-work">
                     <WorkIntroNoBanner 
                         workType={"Graphic Design"}
-                        workSkill={"Photoshop | Illustrator | Tablet Drawing"}
+                        workSkill={"Photoshop, Illustrator, Tablet Drawing"}
                         workContext={"Volunteer Project, Individual, 2021"}
                     />
                     
