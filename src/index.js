@@ -19,6 +19,7 @@ import { GarageDesign } from './pages/work_articles/uiux/garageDesign';
 
 import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
+import { UnSettled } from './pages/work_articles/graphic/unSettledBook';
 
 import { WillFaliure } from './pages/work_articles/film1';
 
@@ -119,6 +120,8 @@ root.render(
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/design/playground" />} />} />
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/design/playground" />} />} />
         
+        <Route path="unsettled" element={<App content={<UnSettled backlink="/design" />} />} />
+
       </Route>
 
 

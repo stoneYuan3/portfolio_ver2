@@ -67,6 +67,15 @@ const work_cmcSermon =
   skill: 'Photoshop | Illustrator | Tablet Drawing',
   context: 'Volunteer Project, Individual, 2021'
 }
+const work_unsettled =
+{
+  link: 'unsettled',
+  image: '/img/banner-unsettled.png',
+  title: 'Un/Settled Exhibition Booklet Design',
+  type: 'Graphic Design',
+  skill: 'Indesign | Photoshop | Illustrator',
+  context: 'School Project, Individual, 2021'
+}
 
 //filming
 const work_willFaliureFilm =
@@ -181,6 +190,7 @@ export const worklist_webdev2023 = [
 export const worklist_design2023 = [
   work_gardenCom,
   work_garageDesign,
+  work_unsettled,
   work_isaBanner,
   work_riskmap,
 ]

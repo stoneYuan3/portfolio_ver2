@@ -328,6 +328,10 @@ footer p{
     flex:1 1 45%;
     margin-right: 0.25rem;
 }
+.section-image-2col.autoHei img{
+    height: 100% !important;
+    object-fit: cover;
+}
 figcaption{
     font-size: 1rem;
     color:gray;
@@ -410,7 +414,7 @@ figcaption{
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-.sectionList p{
+.sectionList p, .sectionList li{
     margin-bottom: 1rem;
 }
 .sectionList .demoComments{
