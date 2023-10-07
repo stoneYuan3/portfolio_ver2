@@ -37,6 +37,35 @@ export const JetourDemo=(props)=>{
                             <img src="/img/gallery/pmpark-jetour/jeTourDemo/allpage.gif"/>
                             <p class="demoComments">The rest of the page</p>
                         </div>
+                        <div class="sectionList">
+                            <h3>Process/Challenge:</h3>
+                            <p>The most challenging part of this project is the banner slider transition animation. Each banner slide is separated by three circles of different sizes and is expected to rotate at different speeds when sliding to the next slide. Although I was familiar with relevant skills such as Swiper Slider plugin and CSS animation at the time, I had never dealt with such complex animations before.
+                            </p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/process/144.gif"/>
+                            <p class="demoComments">Expected outcome</p>
+                        </div>
+                        <div class="sectionList">
+                            <p>After carefully analysing the structure of the animation in the demo, I decided to tackle the problem by setting up three independent HTML elements for the banner. Each HTML element represents one circle and they are animated separately.
+                            </p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/process/jeTourDemo-process-1.png"/>
+                        </div>
+                        <div class="sectionList">
+                            <p>
+                            Realizing that just rotating the image is not enough to achieve the desired result, I decided to apply two layers of animation. While the rotation animation is realized with CSS animation, the fade effect in the video demo is realized with Swiper’s crossfade feature instead. This ensures that the image will rotate and fade at the same time during the transition just as the original demo video showcased.
+                            </p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/process/jeTourDemo-process-2.png"/>
+                            <p class="demoComments">Left: CSS animation. Right: Swiper transition animation</p>
+                        </div>
+                        <div class="sectionList">
+                            <p>
+                            The base for the banner animation is done at this moment, however, a new issue arises where the image can’t seem to cover the entire banner area when rotating.
+                            </p>
+                            <img src="/img/gallery/pmpark-jetour/jeTourDemo/process/197_raw.gif"/>
+                            <p class="demoComments">Screen record for a quick report to my co-worker demonstrating the issue</p>
+                            <p>
+                            To solve this issue, I attempted to scale up the images during the transition, hoping this would be enough to cover the entire banner area. However, it appears that scaling the image a little is not sufficient while scaling the image too much will break the animation. To tackle the issue, I requested the design team to make the images square and applied a small scale up to images during transitions to achieve the desired result.
+                            </p>
+                        </div>
                     </div>
 
 

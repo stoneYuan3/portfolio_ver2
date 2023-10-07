@@ -40,6 +40,35 @@ export const JetourMap=(props)=>{
                             <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap3.gif"/>
                             <p class="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
+                        <div class="sectionList">
+                            <h3>Process/Challenge:</h3>
+                            <p>Learning how to implement Vue.js features on the go is perhaps the most challenging part of this project. Although I had some Vue.js online tutorials before, I had few chances to practice what I learned. To implement Vue.js features such as dynamic search bars, I conducted research and figured it out in a short time.
+                            </p>
+                            <p>Below are some notable resources I referenced for this project.</p>
+
+                            <div class="refList">
+                                <div>
+                                    <h3>filter array</h3>
+                                    <a href="https://masteringjs.io/tutorials/fundamentals/filter-array-of-objects">https://masteringjs.io/tutorials/fundamentals/filter-array-of-objects</a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>
+                                </div>
+                                <div>
+                                    <h3>Related Vue.js concept recap</h3>
+                                    <a href="https://vuejs.org/guide/essentials/computed.html#basic-example">https://vuejs.org/guide/essentials/computed.html#basic-example</a>
+                                    <a href="https://vuejs.org/guide/essentials/list.html#v-for-with-an-object">https://vuejs.org/guide/essentials/list.html#v-for-with-an-object</a>        
+                                </div>
+                                <div>
+                                    <h3>Dynamic search bar refernece</h3>
+                                    <a href="https://codepen.io/AndrewThian/pen/QdeOVa">https://codepen.io/AndrewThian/pen/QdeOVa</a>
+                                </div>
+                                <div>
+                                    <h3>Find an object by the value of its key:</h3>
+                                    <a href="https://stackoverflow.com/questions/60692263/select-object-in-javascript-with-keys-value-condition">https://stackoverflow.com/questions/60692263/select-object-in-javascript-with-keys-value-condition</a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a>
+                                </div>
+                            
+                            </div>
+                        </div>
                     </div>
 
 
