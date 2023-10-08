@@ -72,6 +72,8 @@ root.render(
 
         <Route path="graphic/cmcSermon" element={<App content={<CmcSermon backlink="/graphic" />} />} />
         <Route path="graphic/isaBanner" element={<App content={<IsaBanner backlink="/graphic" />} />} />
+        <Route path="graphic/unsettled" element={<App content={<UnSettled backlink="/graphic" />} />} />
+
       </Route>
 
 

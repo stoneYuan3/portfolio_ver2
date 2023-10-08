@@ -168,7 +168,8 @@ export const worklist_uiux = [
 
 export const worklist_art = [
   work_isaBanner,
-  work_cmcSermon
+  work_cmcSermon,
+  work_unsettled
 ];
 
 
