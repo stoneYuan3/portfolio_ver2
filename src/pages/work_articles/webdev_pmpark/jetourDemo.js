@@ -24,12 +24,12 @@ export const JetourDemo=(props)=>{
                             <p>Added a Vue.js powered search bar and fixed layout glitches in right-to-left language versions and mobile versions with the Swiper.js plugin. </p>
                         </div>
                         <div className="sectionList">
-                            <h3>Gain:</h3>
+                            <h2>Gain:</h2>
                             <p>Practised my Vue.js skill by putting the knowledge I learnt in my own time before this project. Had an increased understanding towards compatibility issues across different languages.
                             </p>
                         </div>
                         <div className="sectionList demoHead">
-                            <h3>Demo:</h3>
+                            <h2>Demo:</h2>
                             <img src="/img/gallery/pmpark-jetour/jeTourDemo/banner.gif"/>
                             <p className="demoComments">Banner animation</p>
                         </div>
@@ -38,7 +38,7 @@ export const JetourDemo=(props)=>{
                             <p className="demoComments">The rest of the page</p>
                         </div>
                         <div className="sectionList">
-                            <h3>Process/Challenge:</h3>
+                            <h2>Process/Challenge:</h2>
                             <p>The most challenging part of this project is the banner slider transition animation. Each banner slide is separated by three circles of different sizes and is expected to rotate at different speeds when sliding to the next slide. Although I was familiar with relevant skills such as Swiper Slider plugin and CSS animation at the time, I had never dealt with such complex animations before.
                             </p>
                             <img src="/img/gallery/pmpark-jetour/jeTourDemo/process/144.gif"/>

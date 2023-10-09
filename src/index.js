@@ -25,6 +25,7 @@ import { WillFaliure } from './pages/work_articles/film1';
 
 import { JetourMap } from './pages/work_articles/webdev_pmpark/jetourMap';
 import { JetourDemo } from './pages/work_articles/webdev_pmpark/jetourDemo';
+import { CheryHomePage } from './pages/work_articles/webdev_pmpark/cheryHomePage';
 import { WcwlBadge } from './pages/work_articles/webdev_pmpark/wcwlBadge';
 
 import { BuildingAssetsLogo } from './pages/work_articles/playground/buildingAssetsLogo'
@@ -67,6 +68,11 @@ root.render(
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/" />} />} />
 
+        <Route path="jeTourMap" element={<App content={<JetourMap backlink="/" />} />} />
+        <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/" />} />} />
+        <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/" />} />} />
+        <Route path="cheryHomePage" element={<App content={<CheryHomePage backlink="/" />} />} />
+
         <Route path="uiux/gardenCom" element={<App content={<GardenCom backlink="/uiux" />} />} />
         <Route path="uiux/garageDesign" element={<App content={<GarageDesign backlink="/uiux" />} />} />
 
@@ -89,6 +95,7 @@ root.render(
         <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
+        <Route path="cheryHomePage" element={<App content={<CheryHomePage backlink="/webdev" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
 

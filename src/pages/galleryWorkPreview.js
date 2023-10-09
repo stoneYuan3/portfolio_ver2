@@ -108,6 +108,15 @@ const work_jeTourDemo1 =
   skill: 'HTML/CSS | Javascript ',
   context: 'Internship Project, individual, 2023'
 }
+const work_cheryHomePage = 
+{
+  link: 'cheryHomePage',
+  image: '/img/banner-cheryHomePage.png',
+  title: 'Jetour Home Page Demo',
+  type: 'Front-end Web Development Project',
+  skill: 'HTML/CSS | Javascript ',
+  context: 'Internship Project, individual, 2023'
+}
 const work_wcwlBadge = 
 {
   link: 'wcwlBadge',
@@ -159,6 +168,7 @@ export const worklist_program = [
   work_jeTourMap,
   work_jeTourDemo1,
   work_wcwlBadge,
+  work_cheryHomePage,
   work_riskmap,
   work_garage,
   work_edusim
@@ -186,7 +196,7 @@ export const worklist_isap = [
 export const worklist_webdev2023 = [
   work_jeTourMap,
   work_jeTourDemo1,
-  work_wcwlBadge,
+  work_cheryHomePage,
   work_edusim,
   work_riskmap
 ]

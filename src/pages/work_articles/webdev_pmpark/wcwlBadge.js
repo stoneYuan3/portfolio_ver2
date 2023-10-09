@@ -23,12 +23,12 @@ export const WcwlBadge=(props)=>{
                             </p>
                         </div>
                         <div className="sectionList">
-                            <h3>Gain:</h3>
+                            <h2>Gain:</h2>
                             <p>Gained experience in researching and developing complex visual styles with CSS animation.
                             </p>
                         </div>
                         <div className="sectionList demoHead">
-                            <h3>Demo:</h3>
+                            <h2>Demo:</h2>
                             <img src="/img/gallery/pmpark-cheryInternational/wcwl/wcwlBadge-all.png"/>
                             <p className="demoComments">Desktop and mobile view</p>
                         </div>

@@ -23,12 +23,12 @@ export const JetourMap=(props)=>{
                             </p>
                         </div>
                         <div className="sectionList">
-                            <h3>Gain:</h3>
+                            <h2>Gain:</h2>
                             <p>Gained experience in researching and developing complex visual styles with CSS animation.
                             </p>
                         </div>
                         <div className="sectionList demoHead">
-                            <h3>Demo:</h3>
+                            <h2>Demo:</h2>
                             <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap1.gif"/>
                             <p className="demoComments">Vue.js powered search bar</p>
                         </div>
@@ -41,7 +41,7 @@ export const JetourMap=(props)=>{
                             <p className="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
                         <div className="sectionList">
-                            <h3>Process/Challenge:</h3>
+                            <h2>Process/Challenge:</h2>
                             <p>Learning how to implement Vue.js features on the go is perhaps the most challenging part of this project. Although I had some Vue.js online tutorials before, I had few chances to practice what I learned. To implement Vue.js features such as dynamic search bars, I conducted research and figured it out in a short time.
                             </p>
                             <p>Below are some notable resources I referenced for this project.</p>
