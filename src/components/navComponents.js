@@ -62,6 +62,7 @@ export const NavMain = (props) => {
         <header className="flex" id="react_nav">
             <nav className="flex">
                 <div className="logo">
+                    {/* <Link onClick={() => {setPage("gallery"); scrollToTop(); NavGallery.resetPage()}} to={homelink}> */}
                     <Link onClick={() => {setPage("gallery"); scrollToTop();}} to={homelink}>
                         <img src="/img/base/logo.svg" />
                         <p>Jack Yuan</p>
@@ -195,9 +196,17 @@ function setNavSideUI(currentPage,setPage){
             return currentPage;
     }
 }
+export const navGallerySetPage = () => {
+
+}
 export const NavGallery = (props) => {
     var initState={};
-    switch(props.page){
+    var propPage=props.page;
+    //solving issue: click logo when on side gallery nav doesnt update gallery nav
+    // function resetPage(){
+    //     propPage="main";
+    // }
+    switch(propPage){
         case "main":
             initState = {
                 main:true,
