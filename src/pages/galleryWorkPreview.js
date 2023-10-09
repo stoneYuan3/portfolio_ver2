@@ -156,6 +156,9 @@ const playground_christianArtistFellowship =
 }
 
 export const worklist_program = [
+  work_jeTourMap,
+  work_jeTourDemo1,
+  work_wcwlBadge,
   work_riskmap,
   work_garage,
   work_edusim
@@ -168,8 +171,8 @@ export const worklist_uiux = [
 
 export const worklist_art = [
   work_isaBanner,
-  work_cmcSermon,
-  work_unsettled
+  work_unsettled,
+  work_willFaliureFilm
 ];
 
 
@@ -201,7 +204,12 @@ export const worklist_design2023 = [
   work_garageDesign,
   work_unsettled,
   work_isaBanner,
+]
+export const worklist_design2023_beyond = [
+  work_jeTourDemo1,
   work_riskmap,
+  work_edusim,
+  work_willFaliureFilm
 ]
 
 export const worklist_playground = [

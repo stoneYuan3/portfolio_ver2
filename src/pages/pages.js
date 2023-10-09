@@ -1,5 +1,5 @@
 import { WorkPreview, PlaygroundPreview } from "../components/galleryPreview";
-import { NavGallery,NavGalleryWebdev } from '../components/navComponents';
+import { NavGallery,NavGalleryWebdev,scrollToTop } from '../components/navComponents';
 import { Link, Outlet } from "react-router-dom";
 
 
@@ -54,21 +54,21 @@ export const GalleryContent = (props) => {
         );
     }
 }
+// export const Gallery = (props) => {
+//     return(
+//         <>
+//             <PageTitle title="Gallery" />
+//             <NavGallery page={props.page}/>
+//             <GalleryContent content={props.content}/>
+//             <Outlet />
+//         </>
+//     );
+// }
 export const Gallery = (props) => {
     return(
         <>
             <PageTitle title="Gallery" />
-            <NavGallery page={props.page}/>
-            <GalleryContent content={props.content}/>
-            <Outlet />
-        </>
-    );
-}
-export const GalleryWebdev = (props) => {
-    return(
-        <>
-            <PageTitle title="Gallery" />
-            <NavGalleryWebdev page={props.page} backlink={props.backlink}/>
+            <NavGallery navType={props.navType} page={props.page} backlink={props.backlink}/>
             <GalleryContent content={props.content}/>
             <Outlet />
         </>

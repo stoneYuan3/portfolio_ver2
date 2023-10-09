@@ -2,6 +2,9 @@
 import { useReducer } from "react";
 import { Link, Outlet } from "react-router-dom";
 
+export const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
 function setNavMainUI(currentPage,setPage){
     switch(setPage){
@@ -39,9 +42,7 @@ function setNavMainUI(currentPage,setPage){
 }
 
 export const NavMain = (props) => {
-    const scrollToTop = () => {
-        window.scrollTo(0, 0)
-    }
+
     var homelink="";
     if(props.homelink!=null){
         homelink=props.homelink;
@@ -93,128 +94,170 @@ export const NavMain = (props) => {
 
 
 
+// function setNavSideUI(currentPage,setPage){
+//     switch(setPage){
+//         case "programming":
+//             return {
+//                 programming:true,
+//                 uiux:false,
+//                 graphic:false
+//             };
+//         case "uiux":
+//             return {
+//                 programming:false,
+//                 uiux:true,
+//                 graphic:false               
+//             };
+//         case "graphic":
+//             return {
+//                 programming:false,
+//                 uiux:false,
+//                 graphic:true               
+//             };    
+//         default:
+//             return currentPage;
+//     }
+// }
+
+// export const NavGallery = (props,type) => {
+//     var initState={};
+//     switch(type){
+//         case "webdev":
+//             console.log('webdev nav');
+//             break;
+//         default:
+//             console.log('default');
+//             break;
+//     }
+    
+//     switch(props.page){
+//         case "programming":
+//             initState = {
+//                 programming:true,
+//                 uiux:false,
+//                 graphic:false
+//             }
+//             break;
+//         case "uiux":
+//             initState = {
+//                 programming:false,
+//                 uiux:true,
+//                 graphic:false
+//             }
+//             break;
+//         case "graphic":
+//             initState = {
+//                 programming:false,
+//                 uiux:false,
+//                 graphic:true
+//             }
+//             break;
+//         default:
+//             initState = {
+//                 programming:false,
+//                 uiux:false,
+//                 graphic:false
+//             }   
+//             break;
+//     }
+//     const [currentPage, setPage] = useReducer(setNavSideUI, initState);
+
+//     return (
+//         <div className="flex flex-row" id="react-nav-gallery">
+//             <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
+//             <Link onClick={() => setPage("uiux")} to="/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
+//             <Link onClick={() => setPage("graphic")} to="/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
+//         </div>
+//     )
+// }
+
 function setNavSideUI(currentPage,setPage){
     switch(setPage){
-        case "programming":
+        case "main":
             return {
-                programming:true,
-                uiux:false,
-                graphic:false
+                main:true,
+                side1:false,
+                side2:false,
             };
-        case "uiux":
+        case "side1":
             return {
-                programming:false,
-                uiux:true,
-                graphic:false               
-            };
-        case "graphic":
+                main:false,
+                side1:true,
+                side2:false,         
+            };  
+        case "side2":
             return {
-                programming:false,
-                uiux:false,
-                graphic:true               
-            };    
-        default:
-            return currentPage;
-    }
-}
-
-export const NavGallery = (props,type) => {
-    var initState={};
-    switch(type){
-        case "webdev":
-            console.log('webdev nav');
-            break;
-        default:
-            console.log('default');
-            break;
-    }
-    
-    switch(props.page){
-        case "programming":
-            initState = {
-                programming:true,
-                uiux:false,
-                graphic:false
-            }
-            break;
-        case "uiux":
-            initState = {
-                programming:false,
-                uiux:true,
-                graphic:false
-            }
-            break;
-        case "graphic":
-            initState = {
-                programming:false,
-                uiux:false,
-                graphic:true
-            }
-            break;
-        default:
-            initState = {
-                programming:false,
-                uiux:false,
-                graphic:false
-            }   
-            break;
-    }
-    const [currentPage, setPage] = useReducer(setNavSideUI, initState);
-
-    return (
-        <div className="flex flex-row" id="react-nav-gallery">
-            <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
-            <Link onClick={() => setPage("uiux")} to="/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
-            <Link onClick={() => setPage("graphic")} to="/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
-        </div>
-    )
-}
-
-function setNavSideUIWebdev(currentPage,setPage){
-    switch(setPage){
-        case "webdev":
-            return {
-                webdev:true,
-                design:false,
-            };
-        case "design":
-            return {
-                webdev:false,
-                design:true,             
+                main:false,
+                side1:false,   
+                side2:true,                       
             };  
         default:
             return currentPage;
     }
 }
-export const NavGalleryWebdev = (props) => {
+export const NavGallery = (props) => {
     var initState={};
     switch(props.page){
-        case "webdev":
+        case "main":
             initState = {
-                webdev:true,
-                design:false,
+                main:true,
+                side1:false,
+                side2:false,
             }
             break;
-        case "design":
+        case "side1":
             initState = {
-                webdev:false,
-                design:true,
+                main:false,
+                side1:true,
+                side2:false,
+            }
+            break;
+        case "side2":
+            initState = {
+                main:false,
+                side1:false,
+                side2:true,
             }
             break;
         default:
             initState = {
-                webdev:false,
-                design:false,
+                main:false,
+                side1:false,
+                side2:false,
             }   
             break;
     }
-    const [currentPage, setPage] = useReducer(setNavSideUIWebdev, initState);
+    const [currentPage, setPage] = useReducer(setNavSideUI, initState);
     var backlink = props.backlink;
+    var navStructure;
+    switch(props.navType){
+        case "webdev":
+            navStructure=(
+                <div className="flex flex-row" id="react-nav-gallery">
+                    <Link onClick={() => setPage("main")} to={backlink} className={currentPage.main?"style-selected":""}>Programming Related</Link>
+                    <Link onClick={() => setPage("side1")} to={backlink+"/design"} className={currentPage.side1?"style-selected":""}>Design & More</Link>
+                </div>
+            );
+            break;
+        
+        case "design":
+            navStructure=(
+                <div className="flex flex-row" id="react-nav-gallery">
+                    <Link onClick={() => setPage("main")} to={backlink} className={currentPage.main?"style-selected":""}>Design Projects</Link>
+                    <Link onClick={() => setPage("side1")} to={backlink+"/beyondDesign"} className={currentPage.side1?"style-selected":""}>Beyond Design</Link>
+                </div>
+            );
+            break;
+        default:
+            navStructure=(
+                <div className="flex flex-row" id="react-nav-gallery">
+                    <Link onClick={() => setPage("main")} to="/" className={currentPage.main?"style-selected":""}>Programming Related</Link>
+                    <Link onClick={() => setPage("side1")} to="/uiux" className={currentPage.side1?"style-selected":""}>UI/UX Design</Link>
+                    <Link onClick={() => setPage("side2")} to="/graphic" className={currentPage.side2?"style-selected":""}>Graphic Design & Beyond</Link>
+                </div>
+            );
+            break;
+    }
 
-    return (
-        <div className="flex flex-row" id="react-nav-gallery">
-            <Link onClick={() => setPage("webdev")} to={backlink} className={currentPage.webdev?"style-selected":""}>Programming Related</Link>
-            <Link onClick={() => setPage("design")} to={backlink+"/design"} className={currentPage.design?"style-selected":""}>Design & More</Link>
-        </div>
-    )
+    return navStructure;
 }
