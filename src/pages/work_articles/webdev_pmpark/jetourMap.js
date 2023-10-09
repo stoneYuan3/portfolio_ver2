@@ -18,35 +18,35 @@ export const JetourMap=(props)=>{
                             workContext={"Front-end development Internship project, July 2023"}
                         />
 
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to develop demos for a new set of Jetour home page designs for client review. Developed the demo with a combination of Swiper.js plugin and CSS animation.
                             </p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <h3>Gain:</h3>
                             <p>Gained experience in researching and developing complex visual styles with CSS animation.
                             </p>
                         </div>
-                        <div class="sectionList demoHead">
+                        <div className="sectionList demoHead">
                             <h3>Demo:</h3>
                             <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap1.gif"/>
-                            <p class="demoComments">Vue.js powered search bar</p>
+                            <p className="demoComments">Vue.js powered search bar</p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap2.gif"/>
-                            <p class="demoComments">Mobile layout fix with Swiper.js powered options</p>
+                            <p className="demoComments">Mobile layout fix with Swiper.js powered options</p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <img src="/img/gallery/pmpark-jetour/mapMaintain/jetourMap3.gif"/>
-                            <p class="demoComments">Switching between different languages while keeping the layout</p>
+                            <p className="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <h3>Process/Challenge:</h3>
                             <p>Learning how to implement Vue.js features on the go is perhaps the most challenging part of this project. Although I had some Vue.js online tutorials before, I had few chances to practice what I learned. To implement Vue.js features such as dynamic search bars, I conducted research and figured it out in a short time.
                             </p>
                             <p>Below are some notable resources I referenced for this project.</p>
 
-                            <div class="refList">
+                            <div className="refList">
                                 <div>
                                     <h3>filter array</h3>
                                     <a href="https://masteringjs.io/tutorials/fundamentals/filter-array-of-objects">https://masteringjs.io/tutorials/fundamentals/filter-array-of-objects</a>

@@ -185,9 +185,17 @@ export const worklist_webdev2023 = [
   work_jeTourDemo1,
   work_wcwlBadge,
   work_edusim,
-  work_gardenCom,
   work_riskmap
 ]
+export const worklist_webdev2023_design = [
+  work_gardenCom,
+  work_garageDesign,
+  work_isaBanner,
+  work_unsettled,
+  work_willFaliureFilm
+]
+
+
 export const worklist_design2023 = [
   work_gardenCom,
   work_garageDesign,

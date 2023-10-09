@@ -14,7 +14,7 @@ export function Nav(props){
  
 export function App(props) {
   return (
-      <section className="flex flex-column section-main">
+      <section id="top" className="flex flex-column section-main">
         {props.content}
         <footer>
           <p>Jack Yuan @2023 | Portfolio build with React.js</p>

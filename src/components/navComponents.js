@@ -39,7 +39,9 @@ function setNavMainUI(currentPage,setPage){
 }
 
 export const NavMain = (props) => {
-
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     var homelink="";
     if(props.homelink!=null){
         homelink=props.homelink;
@@ -59,16 +61,16 @@ export const NavMain = (props) => {
         <header className="flex" id="react_nav">
             <nav className="flex">
                 <div className="logo">
-                    <Link onClick={() => setPage("gallery")} to={homelink}>
+                    <Link onClick={() => {setPage("gallery"); scrollToTop();}} to={homelink}>
                         <img src="/img/base/logo.svg" />
                         <p>Jack Yuan</p>
                     </Link>
                 </div>
 
                 <div className="flex links-nav">
-                    <Link onClick={() => setPage("gallery")} to={homelink} className={currentPage.gallery?"style-selected":""}>Gallery</Link>
-                    <Link onClick={() => setPage("about")} to="about" className={currentPage.about?"style-selected":""}>About Me</Link>
-                    <Link onClick={() => setPage("playground")} to="playground" className={currentPage.playground?"style-selected":""}>Playground</Link>
+                    <Link onClick={() => {setPage("gallery"); scrollToTop();} } to={homelink} className={currentPage.gallery?"style-selected":""}>Gallery</Link>
+                    <Link onClick={() => {setPage("about"); scrollToTop();}} to="about" className={currentPage.about?"style-selected":""}>About Me</Link>
+                    <Link onClick={() => {setPage("playground"); scrollToTop();}} to="playground" className={currentPage.playground?"style-selected":""}>Playground</Link>
                 </div>
 
                 <div className="links-external">
@@ -116,8 +118,17 @@ function setNavSideUI(currentPage,setPage){
     }
 }
 
-export const NavGallery = (props) => {
+export const NavGallery = (props,type) => {
     var initState={};
+    switch(type){
+        case "webdev":
+            console.log('webdev nav');
+            break;
+        default:
+            console.log('default');
+            break;
+    }
+    
     switch(props.page){
         case "programming":
             initState = {
@@ -148,7 +159,6 @@ export const NavGallery = (props) => {
             }   
             break;
     }
-
     const [currentPage, setPage] = useReducer(setNavSideUI, initState);
 
     return (
@@ -156,6 +166,55 @@ export const NavGallery = (props) => {
             <Link onClick={() => setPage("programming")} to="/" className={currentPage.programming?"style-selected":""}>Programming Related</Link>
             <Link onClick={() => setPage("uiux")} to="/uiux" className={currentPage.uiux?"style-selected":""}>UI/UX Design</Link>
             <Link onClick={() => setPage("graphic")} to="/graphic" className={currentPage.graphic?"style-selected":""}>Graphic Design</Link>
+        </div>
+    )
+}
+
+function setNavSideUIWebdev(currentPage,setPage){
+    switch(setPage){
+        case "webdev":
+            return {
+                webdev:true,
+                design:false,
+            };
+        case "design":
+            return {
+                webdev:false,
+                design:true,             
+            };  
+        default:
+            return currentPage;
+    }
+}
+export const NavGalleryWebdev = (props) => {
+    var initState={};
+    switch(props.page){
+        case "webdev":
+            initState = {
+                webdev:true,
+                design:false,
+            }
+            break;
+        case "design":
+            initState = {
+                webdev:false,
+                design:true,
+            }
+            break;
+        default:
+            initState = {
+                webdev:false,
+                design:false,
+            }   
+            break;
+    }
+    const [currentPage, setPage] = useReducer(setNavSideUIWebdev, initState);
+    var backlink = props.backlink;
+
+    return (
+        <div className="flex flex-row" id="react-nav-gallery">
+            <Link onClick={() => setPage("webdev")} to={backlink} className={currentPage.webdev?"style-selected":""}>Programming Related</Link>
+            <Link onClick={() => setPage("design")} to={backlink+"/design"} className={currentPage.design?"style-selected":""}>Design & More</Link>
         </div>
     )
 }

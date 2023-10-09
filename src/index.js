@@ -4,9 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { App, Nav } from './App';
-import { Gallery,GalleryNoNav,Playground, AboutMe, Resume } from './pages/pages';
+import { Gallery,GalleryNoNav,GalleryWebdev, Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap, worklist_webdev2023, worklist_design2023 } from './pages/galleryWorkPreview';
+import { worklist_isap, worklist_webdev2023, worklist_webdev2023_design, worklist_design2023 } from './pages/galleryWorkPreview';
 import { worklist_playground } from './pages/galleryWorkPreview';
 
 
@@ -81,15 +81,22 @@ root.render(
       {/* ///////////////////// */}
       {/* ///////////////////// */}
       <Route path="/webdev" element={<Nav homelink="/webdev"/>}>
-        <Route index element={<App content={<GalleryNoNav content={worklist_webdev2023}/>} />} />
+        <Route index element={<App content={<GalleryWebdev content={worklist_webdev2023} page="webdev" backlink="/webdev"/>} />} />
+        <Route path="design" element={<App content={<GalleryWebdev content={worklist_webdev2023_design} page="design" backlink="/webdev" />} />} />
+
         <Route path="about" element={<App content={<AboutMe />} />} />
 
         <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />
-        <Route path="gardenCom" element={<App content={<GardenCom backlink="/webdev" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
+
+        <Route path="design/gardenCom" element={<App content={<GardenCom backlink="/webdev/design" />} />} />
+        <Route path="design/garageDesign" element={<App content={<GarageDesign backlink="/webdev/design" />} />} />
+        <Route path="design/isaBanner" element={<App content={<IsaBanner backlink="/webdev/design" />} />} />
+        <Route path="design/unsettled" element={<App content={<UnSettled backlink="/webdev/design" />} />} />
+        <Route path="design/willFaliureFilm" element={<App content={<WillFaliure backlink="/webdev/design" />} />} />
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />
@@ -111,6 +118,7 @@ root.render(
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/design" />} />} />
         <Route path="garageDesign" element={<App content={<GarageDesign backlink="/design" />} />} />
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/design" />} />} />
+        <Route path="unsettled" element={<App content={<UnSettled backlink="/design" />} />} />
 
         <Route path="riskmap" element={<App content={<Riskmap backlink="/design" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/design" />} />} />
@@ -122,7 +130,6 @@ root.render(
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/design/playground" />} />} />
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/design/playground" />} />} />
         
-        <Route path="unsettled" element={<App content={<UnSettled backlink="/design" />} />} />
 
       </Route>
 

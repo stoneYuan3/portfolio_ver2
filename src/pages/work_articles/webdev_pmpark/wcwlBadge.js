@@ -18,27 +18,27 @@ export const WcwlBadge=(props)=>{
                             workContext={"Front-end development Internship project, August 2023"}
                         />
 
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to develop demos for a new set of Jetour home page designs for client review. Developed the demo with a combination of Swiper.js plugin and CSS animation.
                             </p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <h3>Gain:</h3>
                             <p>Gained experience in researching and developing complex visual styles with CSS animation.
                             </p>
                         </div>
-                        <div class="sectionList demoHead">
+                        <div className="sectionList demoHead">
                             <h3>Demo:</h3>
                             <img src="/img/gallery/pmpark-cheryInternational/wcwl/wcwlBadge-all.png"/>
-                            <p class="demoComments">Desktop and mobile view</p>
+                            <p className="demoComments">Desktop and mobile view</p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                         <img src="/img/gallery/pmpark-cheryInternational/wcwl/demo_desktop.gif"/>
-                            <p class="demoComments">Full Desktop View</p>
+                            <p className="demoComments">Full Desktop View</p>
                         </div>
-                        <div class="sectionList">
+                        <div className="sectionList">
                             <img src="/img/gallery/pmpark-cheryInternational/wcwl/demo_mobile.gif"/>
-                            <p class="demoComments">Switching between different languages while keeping the layout</p>
+                            <p className="demoComments">Switching between different languages while keeping the layout</p>
                         </div>
                     </div>
 
