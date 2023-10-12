@@ -163,6 +163,15 @@ const playground_christianArtistFellowship =
   skill: 'Wordpress, Figma',
   context: 'Volunteer Project, Group, 2023, Ongoing'
 }
+const playground_hanfuMaking = 
+{
+  link: 'hanfuMaking',
+  image: '/img/banner-hanfuMaking.png',
+  title: 'Garment Making Projects',
+  type: 'Garment Design',
+  skill: 'Sewing, Pattern Making, Adobe Illustrator',
+  context: 'Hobby project, ongoing'
+}
 
 export const worklist_program = [
   work_jeTourMap,
@@ -222,7 +231,23 @@ export const worklist_design2023_beyond = [
   work_willFaliureFilm
 ]
 
+export const worklist_2024arcTeryx = [
+  work_unsettled,
+  work_isaBanner,
+  playground_hanfuMaking,
+  work_garageDesign,
+  work_gardenCom,
+]
+
 export const worklist_playground = [
+  playground_hanfuMaking,
+  playground_christianArtistFellowship,
+  playground_lukeposters,
+  playground_resurrection,
+  work_cmcSermon,
+  playground_buildingAssetsLogo
+]
+export const worklist_playground_arcTeryx = [
   playground_christianArtistFellowship,
   playground_lukeposters,
   playground_resurrection,

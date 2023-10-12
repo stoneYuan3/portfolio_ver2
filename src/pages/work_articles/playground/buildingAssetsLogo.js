@@ -26,12 +26,14 @@ export const BuildingAssetsLogo =(props)=>{
                         <div className="flex flex-column section-work-gallery">
                             <div class="sectionList">
                                 <img src="/img/playground/buildingAssets/logo_sketches_1.png"/>
+                                <p className="demoComments">Rough sketches</p>
                             </div>
-                            <p class="p-work-imageCap"><em>Rough sketches</em></p>
+                            {/* <p class="p-work-imageCap"><em>Rough sketches</em></p> */}
                             <div>
                                 <img src="/img/playground/buildingAssets/logo_sketches_2.png"/>
+                                <p className="demoComments">Final sketches</p>
                             </div>
-                            <p class="p-work-imageCap"><em>Final sketches</em></p>
+                            {/* <p class="p-work-imageCap"><em>Final sketches</em></p> */}
                         </div>
 
                     </div>

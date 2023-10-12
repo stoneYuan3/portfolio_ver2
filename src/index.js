@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { App, Nav } from './App';
 import { Gallery,GalleryNoNav,GalleryWebdev, Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023 } from './pages/galleryWorkPreview';
-import { worklist_playground } from './pages/galleryWorkPreview';
+import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023 } from './pages/galleryWorkPreview';
+import { worklist_playground, worklist_playground_arcTeryx } from './pages/galleryWorkPreview';
 
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
@@ -32,6 +32,7 @@ import { BuildingAssetsLogo } from './pages/work_articles/playground/buildingAss
 import { EcbcExhibition } from './pages/work_articles/playground/ecbcExhibition'
 import { FriendSermonPosters } from './pages/work_articles/playground/friendSermonPosters'
 import { ChristianArtistFellowship } from './pages/work_articles/playground/christianArtistFellowship'
+import { HanfuMaking } from './pages/work_articles/playground/hanfuMaking';
 
 import {
   BrowserRouter,
@@ -40,6 +41,22 @@ import {
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const playgroundRoutes = (backlink) => {
+
+  return (
+    <>
+      <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+      <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink={backlink} />} />} />
+      <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink={backlink} />} />} />
+      <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink={backlink} />} />} />
+      <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink={backlink} />} />} />
+      <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink={backlink} />} />} />
+      <Route path="playground/hanfuMaking" element={<App content={<HanfuMaking backlink={backlink} />} />} />
+    </>
+  )
+} 
+
 root.render(
   <BrowserRouter>
 
@@ -56,13 +73,13 @@ root.render(
 
         <Route path="about" element={<App content={<AboutMe />} />} />
 
-        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+        {/* <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
         <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/playground" />} />} />
         <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/playground" />} />} />
         <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/playground" />} />} />
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/playground" />} />} />
-        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} />
-
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} /> */}
+        ${playgroundRoutes("/playground")}
         
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
@@ -105,12 +122,8 @@ root.render(
         <Route path="design/unsettled" element={<App content={<UnSettled backlink="/webdev/design" />} />} />
         <Route path="design/willFaliureFilm" element={<App content={<WillFaliure backlink="/webdev/design" />} />} />
 
-        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
-        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/webdev/playground" />} />} />
-        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/webdev/playground" />} />} />
-        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/webdev/playground" />} />} />
-        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/webdev/playground" />} />} />
-        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/webdev/playground" />} />} />
+        ${playgroundRoutes("/webdev/playground")}
+
         
       </Route>
 
@@ -135,13 +148,38 @@ root.render(
         <Route path="beyondDesign/edusim" element={<App content={<Edusim backlink="/design/beyondDesign" />} />} />
         <Route path="beyondDesign/willFaliureFilm" element={<App content={<WillFaliure backlink="/design/beyondDesign" />} />} />
 
-        <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
-        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/design/playground" />} />} />
-        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/design/playground" />} />} />
-        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/design/playground" />} />} />
-        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/design/playground" />} />} />
-        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/design/playground" />} />} />
-        
+        ${playgroundRoutes("/design/playground")}
+
+      </Route>
+
+
+      {/* design portfolio page set*/}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
+      <Route path="/2024arcTeryx" element={<Nav homelink="/2024arcTeryx"/>}>
+        {/* <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} /> */}
+        <Route index element={<App content={<Gallery content={worklist_2024arcTeryx} navType="design" page="main" backlink="/2024arcTeryx"/>} />} />
+        <Route path="beyondDesign" element={<App content={<Gallery content={worklist_design2023_beyond} navType="design" page="side1" backlink="/2024arcTeryx" />} />} />
+
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="gardenCom" element={<App content={<GardenCom backlink="/2024arcTeryx" />} />} />
+        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2024arcTeryx" />} />} />
+        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2024arcTeryx" />} />} />
+        <Route path="unsettled" element={<App content={<UnSettled backlink="/2024arcTeryx" />} />} />
+        <Route path="hanfuMaking" element={<App content={<HanfuMaking backlink="/2024arcTeryx" />} />} />
+
+        <Route path="beyondDesign/jetourDemo" element={<App content={<JetourDemo backlink="/2024arcTeryx/beyondDesign" />} />} />
+        <Route path="beyondDesign/riskmap" element={<App content={<Riskmap backlink="/2024arcTeryx/beyondDesign" />} />} />
+        <Route path="beyondDesign/edusim" element={<App content={<Edusim backlink="/2024arcTeryx/beyondDesign" />} />} />
+        <Route path="beyondDesign/willFaliureFilm" element={<App content={<WillFaliure backlink="/2024arcTeryx/beyondDesign" />} />} />
+
+        <Route path="playground" element={<App content={<Playground content={worklist_playground_arcTeryx}/>} />} />
+        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/2024arcTeryx/playground" />} />} />
+        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/2024arcTeryx/playground" />} />} />
+        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/2024arcTeryx/playground" />} />} />
+        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/2024arcTeryx/playground" />} />} />
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/2024arcTeryx/playground" />} />} />
 
       </Route>
 

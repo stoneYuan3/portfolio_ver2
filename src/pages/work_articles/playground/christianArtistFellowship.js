@@ -34,8 +34,9 @@ export const ChristianArtistFellowship =(props)=>{
                             </div>
                             <div class="sectionList">
                                 <img src="/img/playground/christianArtistFellowship/web1.png"/>
+                                <p className="demoComments">Screenshot of those reference websites, which I also shown to the Christian Art Fellowship</p>
                             </div>
-                            <p class="p-work-imageCap"><em>Screenshot of those reference websites, which I also shown to the Christian Art Fellowship</em></p>
+                            {/* <p class="p-work-imageCap"><em>Screenshot of those reference websites, which I also shown to the Christian Art Fellowship</em></p> */}
                             <div class="sectionList">
                                 <p>Based on those reference sites, I concluded five main components that sites of this kind generally have: A home page, a page that introduces the organization, a page that records all activities & new activity forecast, and a page that includes regularly arranged lessons, and a page with ways of getting involved & support the organization. This is necessary as my clients in the Christian Art Fellowship have little experience with websites.</p>
                             </div>

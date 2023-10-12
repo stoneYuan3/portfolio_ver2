@@ -31,34 +31,44 @@ export const EcbcExhibition =(props)=>{
                                 <div>
                                     <img src="/img/playground/resurrectionExhibition/poster2.jpg" />
                                 </div>
+                                <p className="demoComments">Posters of the exhibition for reference. I didn't design the posters</p>
                             </div>
+                            {/* <p className="demoComments">Posters of the exhibition for reference. I didn't design the posters</p> */}
                             <p class="p-work-imageCap"><em>Posters of the exhibition for reference. I didn't design the posters</em></p>
                             
                             <div class="sectionList">
                                 <img src="/img/playground/resurrectionExhibition/prep.jpg" />
+                                <p className="demoComments">Building the main art installation</p>
                             </div>
-                            <p class="p-work-imageCap"><em>Building the main art installation</em></p>
+                            {/* <p className="demoComments">Building the main art installation</p> */}
+                            {/* <p class="p-work-imageCap"><em>Building the main art installation</em></p> */}
 
                             <div class="sectionList">
                                 <img src="/img/playground/resurrectionExhibition/work1.jpg" />
+                                <p className="demoComments">My drawings, framed and delivered to the exhibition site</p>
                             </div>
-                            <p class="p-work-imageCap"><em>My drawings, framed and delivered to the exhibition site</em></p>
+                            {/* <p className="demoComments">My drawings, framed and delivered to the exhibition site</p> */}
+                            {/* <p class="p-work-imageCap"><em>My drawings, framed and delivered to the exhibition site</em></p> */}
 
-                            <div className="flex section-image-2col">
+                            <div className="flex section-image-2col sectionList">
                                 <div>
                                     <img src="/img/playground/resurrectionExhibition/exhibit1.jpg" />
                                 </div>
                                 <div>
                                     <img src="/img/playground/resurrectionExhibition/exhibit2.jpg" />
                                 </div>
+                                <p className="demoComments">Exhibition day</p>
                             </div>
-                            <p class="p-work-imageCap"><em>Exhibition day</em></p>
+                            {/* <p className="demoComments">Exhibition day</p> */}
+                            {/* <p class="p-work-imageCap"><em>Exhibition day</em></p> */}
 
                             <div class="sectionList">
                                 <img src="/img/playground/resurrectionExhibition/work2.jpg" />
                                 <img src="/img/playground/resurrectionExhibition/work3.jpg" />
+                                <p className="demoComments">My drawings during the exhibition</p>
                             </div>
-                            <p class="p-work-imageCap"><em>My drawings during the exhibition</em></p>
+                            {/* <p className="demoComments">My drawings during the exhibition</p> */}
+                            {/* <p class="p-work-imageCap"><em>My drawings during the exhibition</em></p> */}
 
                         </div>
 
