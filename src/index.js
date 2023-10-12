@@ -153,7 +153,7 @@ root.render(
       </Route>
 
 
-      {/* design portfolio page set*/}
+      {/* 2024 Arc'Teryx page set*/}
       {/* ///////////////////// */}
       {/* ///////////////////// */}
       <Route path="/2024arcTeryx" element={<Nav homelink="/2024arcTeryx"/>}>
