@@ -39,7 +39,7 @@ export const Garage=(props)=>{
                             <div id="section-videoDemo">
 
                             <section>
-                                <h3>Demonstration of all major functionalities, done by my teammates</h3>
+                                <h3>Demonstration of all major functionalities, video recorded by my teammates</h3>
                                 <div className="section-vidBox">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q5SlYJRoJM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 

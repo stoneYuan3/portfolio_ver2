@@ -115,6 +115,7 @@ root.render(
         <Route path="cheryHomePage" element={<App content={<CheryHomePage backlink="/webdev" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/webdev" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
+        <Route path="garage" element={<App content={<Garage backlink="/webdev" />} />} />
 
         <Route path="design/gardenCom" element={<App content={<GardenCom backlink="/webdev/design" />} />} />
         <Route path="design/garageDesign" element={<App content={<GarageDesign backlink="/webdev/design" />} />} />

@@ -206,8 +206,9 @@ export const worklist_webdev2023 = [
   work_jeTourMap,
   work_jeTourDemo1,
   work_cheryHomePage,
+  work_riskmap,
+  work_garage,
   work_edusim,
-  work_riskmap
 ]
 export const worklist_webdev2023_design = [
   work_gardenCom,
