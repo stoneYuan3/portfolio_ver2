@@ -35,7 +35,7 @@ export const Garage=(props)=>{
                             Additionally, I was also in charge of integrating my teammate's work, such as editing HTML codes to fit backend settings, and setting up connections between the front end and back end using JQuery AJAX calls. JQuery/AJAX is not necessary for the project, but I want to try some more advanced features.
                             </p>
 
-                            <h2>Video Demonstration</h2>
+                            <h2>Demo</h2>
                             <div id="section-videoDemo">
 
                             <section>
@@ -44,6 +44,16 @@ export const Garage=(props)=>{
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q5SlYJRoJM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
                                     </iframe>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h3>Other Resources</h3>
+                                <div className="sectionList">
+                                    <img src="/img/gallery/garageDev/figmaSlide.png"/>
+                                    <p className="demoComments"><a href="https://www.figma.com/proto/Xmx1Bup4B3PZlzgMJmK0Hw/IAT352-mainProject?type=design&node-id=228-1523&t=mzOcHoBkV99LiHIj-0&scaling=contain&page-id=148%3A569">Final precentation slide on Figma, which includes a demo, a walkthrough to major features and database design related topics</a></p>
+                                    <img src="/img/gallery/garageDev/erDiagram.png" />
+                                    <p className="demoComments">ER diagram for database</p>
                                 </div>
                             </section>
 
