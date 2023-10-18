@@ -112,7 +112,7 @@ const work_cheryHomePage =
 {
   link: 'cheryHomePage',
   image: '/img/banner-cheryHomePage.png',
-  title: 'Jetour Home Page Demo',
+  title: 'Chery International Home Page Development',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Javascript ',
   context: 'Internship Project, individual, 2023'

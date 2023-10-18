@@ -29,6 +29,7 @@ export const CheryHomePage=(props)=>{
                         </div>
                         <div className="sectionList demoHead">
                             <h2>Demo:</h2>
+                            <iframe src="/img/source/cheryInternational/index.html" title="description"></iframe>
                             <img src="/img/gallery/pmpark-cheryInternational/homepage/all.png"/>
                             <p className="demoComments">PC and Mobile</p>
                         </div>
