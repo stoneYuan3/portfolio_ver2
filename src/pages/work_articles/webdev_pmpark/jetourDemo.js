@@ -30,6 +30,7 @@ export const JetourDemo=(props)=>{
                         </div>
                         <div className="sectionList demoHead">
                             <h2>Demo:</h2>
+                            <iframe src="/img/source/jeTourDemo/index.html" title="description"></iframe>
                             <img src="/img/gallery/pmpark-jetour/jeTourDemo/banner.gif"/>
                             <p className="demoComments">Banner animation</p>
                         </div>
