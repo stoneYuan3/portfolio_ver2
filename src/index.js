@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { App, Nav } from './App';
 import { Gallery,GalleryNoNav,GalleryWebdev, Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023 } from './pages/galleryWorkPreview';
+import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023, worklist_2024SAPcomm } from './pages/galleryWorkPreview';
 import { worklist_playground, worklist_playground_arcTeryx } from './pages/galleryWorkPreview';
 
 
@@ -204,6 +204,37 @@ root.render(
         
         <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2023isap" />} />} />
       </Route>
+
+      {/* 2024 SAP ixp Communications Specialist set*/}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
+      <Route path="/2024SAPcomm" element={<Nav homelink="/2024SAPcomm"/>}>
+        {/* <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} /> */}
+        <Route index element={<App content={<Gallery content={worklist_2024SAPcomm} navType="design" page="main" backlink="/2024SAPcomm"/>} />} />
+        <Route path="beyondDesign" element={<App content={<Gallery content={worklist_design2023_beyond} navType="design" page="side1" backlink="/2024SAPcomm" />} />} />
+
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="gardenCom" element={<App content={<GardenCom backlink="/2024SAPcomm" />} />} />
+        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2024SAPcomm" />} />} />
+        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2024SAPcomm" />} />} />
+        <Route path="unsettled" element={<App content={<UnSettled backlink="/2024SAPcomm" />} />} />
+        <Route path="hanfuMaking" element={<App content={<HanfuMaking backlink="/2024SAPcomm" />} />} />
+
+        <Route path="beyondDesign/jetourDemo" element={<App content={<JetourDemo backlink="/2024SAPcomm/beyondDesign" />} />} />
+        <Route path="beyondDesign/riskmap" element={<App content={<Riskmap backlink="/2024SAPcomm/beyondDesign" />} />} />
+        <Route path="beyondDesign/edusim" element={<App content={<Edusim backlink="/2024SAPcomm/beyondDesign" />} />} />
+        <Route path="beyondDesign/willFaliureFilm" element={<App content={<WillFaliure backlink="/2024SAPcomm/beyondDesign" />} />} />
+
+        <Route path="playground" element={<App content={<Playground content={worklist_playground_arcTeryx}/>} />} />
+        <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink="/2024SAPcomm/playground" />} />} />
+        <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink="/2024SAPcomm/playground" />} />} />
+        <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/2024SAPcomm/playground" />} />} />
+        <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/2024SAPcomm/playground" />} />} />
+        <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/2024SAPcomm/playground" />} />} />
+
+      </Route>
+
 
     </Routes>
 

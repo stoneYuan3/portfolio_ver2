@@ -240,6 +240,16 @@ export const worklist_2024arcTeryx = [
   work_gardenCom,
 ]
 
+export const worklist_2024SAPcomm = [
+  work_garageDesign,
+  work_unsettled,
+  work_isaBanner,
+  work_willFaliureFilm,
+]
+
+
+
+
 export const worklist_playground = [
   playground_hanfuMaking,
   playground_christianArtistFellowship,

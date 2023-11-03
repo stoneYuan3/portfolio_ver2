@@ -96,14 +96,14 @@ export const UnSettled=(props)=>{
                             <p class="demoComments">Second cover design, front cover at right back cover at left.</p>
                         </div>
                         <div class="sectionList">
-                            <p><strong>Cover Design Process: First Draft 2nd Variation</strong></p>
+                            <p><strong>Cover Design Process: First Draft 3rd Variation</strong></p>
                             <p>
                                 The third cover design used the portrait of Otoniya J. Okot Bitek, who is one of the authors of the exhibition. The photo was treated with Adobe Illustrator’s line tracing feature to make it look more abstract. By doing so I aim to show an abstract idea of black womanhood and reflect a sense of humanistic care to the victims of racial violence, which is what I found in Otoniya’s smile and the overall style of the exhibition.
                             </p>
                             <p>
                                 I like the rationale of the third cover design the most because it fits the message of the exhibition the best, which is why I decided to build the final cover on the third draft.
                             </p>
-                            <img src="/img/gallery/unSettled/progress-cover-5.png"/>
+                            <img src="/img/gallery/unSettled/progress-cover-6.png"/>
                             <p class="demoComments">Third cover design, back cover at right front cover at left.</p>
                         </div>
 
