@@ -257,6 +257,14 @@ export const NavGallery = (props) => {
                 </div>
             );
             break;
+        case "general":
+            navStructure=(
+                <div className="flex flex-row" id="react-nav-gallery">
+                    <Link onClick={() => setPage("main")} to={backlink} className={currentPage.main?"style-selected":""}>Relevant Projects</Link>
+                    <Link onClick={() => setPage("side1")} to={backlink+"/others"} className={currentPage.side1?"style-selected":""}>Other Projects</Link>
+                </div>
+            );
+            break;
         default:
             navStructure=(
                 <div className="flex flex-row" id="react-nav-gallery">

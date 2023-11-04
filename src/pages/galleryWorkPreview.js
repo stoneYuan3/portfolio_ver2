@@ -58,6 +58,15 @@ const work_isaBanner =
   skill: 'Photoshop',
   context: 'Internship Project, Individual, 2022'
 }
+const work_EDImodule =
+{
+  link: 'EDImodule',
+  image: '/img/banner-EDImodule.png',
+  title: 'Equity-Diversity-Inclusion Training Module Re-design',
+  type: 'Graphic Design',
+  skill: 'Articulate Storyline 360 | Illustrator',
+  context: 'Internship Project, Individual, 2022'
+}
 const work_cmcSermon =
 {
   link: 'cmcSermon',
@@ -252,17 +261,19 @@ export const worklist_2024arcTeryx = [
 ]
 
 export const worklist_2024SAPcomm = [
-  work_garageDesign,
   work_belgiumMissionPoster,
   work_unsettled,
-  work_isaBanner,
+  work_EDImodule,
   work_willFaliureFilm,
 ]
 
 export const worklist_2024SAPcomm_beyond = [
   work_jeTourDemo1,
   work_jeTourMap,
+  work_garageDesign,
+  work_gardenCom,
   work_riskmap,
+  work_isaBanner,
   work_edusim,
 ]
 

@@ -34,7 +34,7 @@ export const BelgiumMissionPoster=(props)=>{
                             <p>The theme of the concert is “Value of life”, and I tried to convey this idea through the image of three people playing music on a large empty field. What are you going to do with your life? Listen to that music and you will know, hopefully.</p>
                         </div>
 
-                        <h2>Process</h2>
+                        <h2>Process/Challenge:</h2>
                         <div className="sectionList">
                             <p>One of the most significant experiences I had in this project was the feedback I received from my friend as well as other people in the mission team, which helped me to improve on details that I didn’t pay much attention to before. </p>
                         </div>

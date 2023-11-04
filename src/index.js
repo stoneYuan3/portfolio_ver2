@@ -21,6 +21,7 @@ import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
 import { UnSettled } from './pages/work_articles/graphic/unSettledBook';
 import { BelgiumMissionPoster } from './pages/work_articles/graphic/belgiumMissionPoster';
+import { EDImodule } from './pages/work_articles/graphic/EDImodule'
 
 import { WillFaliure } from './pages/work_articles/film1';
 
@@ -201,7 +202,7 @@ root.render(
 
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/2023isap" />} />} />
         <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2023isap" />} />} />
-
+        
         <Route path="cmcSermon" element={<App content={<CmcSermon backlink="/2023isap" />} />} />
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2023isap" />} />} />
         
@@ -213,24 +214,24 @@ root.render(
       {/* ///////////////////// */}
       <Route path="/2024SAPcomm" element={<Nav homelink="/2024SAPcomm"/>}>
         {/* <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} /> */}
-        <Route index element={<App content={<Gallery content={worklist_2024SAPcomm} navType="design" page="main" backlink="/2024SAPcomm"/>} />} />
-        <Route path="beyondDesign" element={<App content={<Gallery content={worklist_2024SAPcomm_beyond} navType="design" page="side1" backlink="/2024SAPcomm" />} />} />
+        <Route index element={<App content={<Gallery content={worklist_2024SAPcomm} navType="general" page="main" backlink="/2024SAPcomm"/>} />} />
+        <Route path="others" element={<App content={<Gallery content={worklist_2024SAPcomm_beyond} navType="general" page="side1" backlink="/2024SAPcomm" />} />} />
 
         <Route path="about" element={<App content={<AboutMe />} />} />
 
-        <Route path="gardenCom" element={<App content={<GardenCom backlink="/2024SAPcomm" />} />} />
-        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2024SAPcomm" />} />} />
-        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2024SAPcomm" />} />} />
+        <Route path="EDImodule" element={<App content={<EDImodule backlink="/2024SAPcomm" />} />} />
         <Route path="unsettled" element={<App content={<UnSettled backlink="/2024SAPcomm" />} />} />
-        <Route path="belgiumMissionPoster" element={<App content={<BelgiumMissionPoster backlink="/graphic" />} />} />
-        <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2024SAPcomm/beyondDesign" />} />} />
-
+        <Route path="belgiumMissionPoster" element={<App content={<BelgiumMissionPoster backlink="/2024SAPcomm" />} />} />
+        <Route path="willFaliureFilm" element={<App content={<WillFaliure backlink="/2024SAPcomm" />} />} />
         {/* <Route path="hanfuMaking" element={<App content={<HanfuMaking backlink="/2024SAPcomm" />} />} /> */}
 
-        <Route path="beyondDesign/jetourDemo" element={<App content={<JetourDemo backlink="/2024SAPcomm/beyondDesign" />} />} />
-        <Route path="beyondDesign/jeTourMap" element={<App content={<JetourMap backlink="/2024SAPcomm/beyondDesign" />} />} />
-        <Route path="beyondDesign/riskmap" element={<App content={<Riskmap backlink="/2024SAPcomm/beyondDesign" />} />} />
-        <Route path="beyondDesign/edusim" element={<App content={<Edusim backlink="/2024SAPcomm/beyondDesign" />} />} />
+        <Route path="others/isaBanner" element={<App content={<IsaBanner backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/garageDesign" element={<App content={<GarageDesign backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/gardenCom" element={<App content={<GardenCom backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/jetourDemo" element={<App content={<JetourDemo backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/jeTourMap" element={<App content={<JetourMap backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/riskmap" element={<App content={<Riskmap backlink="/2024SAPcomm/others" />} />} />
+        <Route path="others/edusim" element={<App content={<Edusim backlink="/2024SAPcomm/others" />} />} />
         {/* <Route path="beyondDesign/willFaliureFilm" element={<App content={<WillFaliure backlink="/2024SAPcomm/beyondDesign" />} />} /> */}
 
         <Route path="playground" element={<App content={<Playground content={worklist_playground_arcTeryx}/>} />} />
