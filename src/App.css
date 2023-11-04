@@ -476,6 +476,10 @@ figcaption{
     margin-bottom: 0;
 }
 
+.sectionList .imgHori30rem{
+    max-width: 30rem;
+}
+
 /* <1440px */
 @media screen and (max-width: 90em){
     #section-videoDemo{

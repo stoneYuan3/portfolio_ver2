@@ -23,7 +23,9 @@ export const GardenCom = (props) => {
 
                         <p>This project is the final project of a user experience and interface design course that lasts for 6-7 weeks. It is done with a group of five. The task for this project is to research an industry and develop a digital solution (such as an app) for a problem found in this industry.</p>
 
-                        <p>We choose agriculture and gardening as the industry we want to focus on and the problem we land on is the lack of connection between members in community gardens. The final outcome of this project is a prototype of the app done in Protopie and a promotional video for the app.</p>
+                        <p>We choose agriculture and gardening as the industry we want to focus on and the problem we land on is the lack of connection between members in community gardens: community garden users only knows one or two other users from the same garden and many community gardens nowadays is just a garden that happens to be public.</p>
+                        
+                        <p> The final outcome of this project is a prototype of the app done in Protopie and a promotional video for the app.</p>
 
 
                         <h2>Final Outcome Video</h2>
@@ -37,9 +39,9 @@ export const GardenCom = (props) => {
                         </div>
 
                         <h2>Process</h2>
-                        <p>The initial problem that we were focusing on is the lack of connection between small farmers and consumers, where user researches with some local small farm businesses show that some small farmers complained about their public exposure.</p>
+                        <p>The initial problem that we were focusing on is the lack of connection between small farmers and consumers. We interviewed some local small farm owners, and we find that some of them complained about the lack of public exposure for their business.</p>
 
-                        <p>Our initial idea was to develop a local farm map and online farm market, but we soon find that existing platforms such as Etsy already solves the issue to some extent.</p>
+                        <p>Based on our research, our initial idea was to develop a local farm map that also links to an online farm market, but we soon find that existing platforms such as Etsy already solves the issue to some extent based on the feedback we got.</p>
 
                         <div className="flex section-image-3col">
                             <div>

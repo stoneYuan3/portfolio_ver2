@@ -76,6 +76,15 @@ const work_unsettled =
   skill: 'Indesign | Photoshop | Illustrator',
   context: 'School Project, Individual, 2021'
 }
+const work_belgiumMissionPoster =
+{
+  link: 'belgiumMissionPoster',
+  image: '/img/banner-belgiumMissionPoster.png',
+  title: 'Charleroi Concert Poster Design',
+  type: 'Graphic Design',
+  skill: 'Photoshop | Figma | Midjourney',
+  context: 'Volunteer Project, Individual, 2023'
+}
 
 //filming
 const work_willFaliureFilm =
@@ -173,6 +182,8 @@ const playground_hanfuMaking =
   context: 'Hobby project, ongoing'
 }
 
+
+
 export const worklist_program = [
   work_jeTourMap,
   work_jeTourDemo1,
@@ -242,12 +253,18 @@ export const worklist_2024arcTeryx = [
 
 export const worklist_2024SAPcomm = [
   work_garageDesign,
+  work_belgiumMissionPoster,
   work_unsettled,
   work_isaBanner,
   work_willFaliureFilm,
 ]
 
-
+export const worklist_2024SAPcomm_beyond = [
+  work_jeTourDemo1,
+  work_jeTourMap,
+  work_riskmap,
+  work_edusim,
+]
 
 
 export const worklist_playground = [
