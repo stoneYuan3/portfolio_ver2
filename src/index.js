@@ -45,7 +45,6 @@ import {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const playgroundRoutes = (backlink) => {
-
   return (
     <>
       <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
@@ -55,6 +54,7 @@ const playgroundRoutes = (backlink) => {
       <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink={backlink} />} />} />
       <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink={backlink} />} />} />
       <Route path="playground/hanfuMaking" element={<App content={<HanfuMaking backlink={backlink} />} />} />
+      <Route path="playground/belgiumMissionPoster" element={<App content={<BelgiumMissionPoster backlink={backlink} />} />} />
     </>
   )
 } 
@@ -145,6 +145,7 @@ root.render(
 
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/design" />} />} />
         <Route path="garageDesign" element={<App content={<GarageDesign backlink="/design" />} />} />
+        <Route path="EDImodule" element={<App content={<EDImodule backlink="/design" />} />} />
         <Route path="isaBanner" element={<App content={<IsaBanner backlink="/design" />} />} />
         <Route path="unsettled" element={<App content={<UnSettled backlink="/design" />} />} />
 

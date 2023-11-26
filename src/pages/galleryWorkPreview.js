@@ -243,6 +243,7 @@ export const worklist_design2023 = [
   work_gardenCom,
   work_garageDesign,
   work_unsettled,
+  work_EDImodule,
   work_isaBanner,
 ]
 export const worklist_design2023_beyond = [
@@ -279,6 +280,7 @@ export const worklist_2024SAPcomm_beyond = [
 
 
 export const worklist_playground = [
+  work_belgiumMissionPoster,
   playground_hanfuMaking,
   playground_christianArtistFellowship,
   playground_lukeposters,
