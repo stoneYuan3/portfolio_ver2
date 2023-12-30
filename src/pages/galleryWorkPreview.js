@@ -241,6 +241,7 @@ export const worklist_webdev2023 = [
   work_edusim,
 ]
 export const worklist_webdev2023_design = [
+  work_northsideWeb,
   work_gardenCom,
   work_garageDesign,
   work_isaBanner,

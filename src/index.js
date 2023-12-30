@@ -92,7 +92,7 @@ root.render(
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/" />} />} />
         <Route path="cheryHomePage" element={<App content={<CheryHomePage backlink="/" />} />} />
-        
+
         <Route path="uiux/northsideWeb" element={<App content={<NorthsideWeb backlink="/uiux" />} />} />
         <Route path="uiux/gardenCom" element={<App content={<GardenCom backlink="/uiux" />} />} />
         <Route path="uiux/garageDesign" element={<App content={<GarageDesign backlink="/uiux" />} />} />
@@ -123,6 +123,7 @@ root.render(
         <Route path="edusim" element={<App content={<Edusim backlink="/webdev" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/webdev" />} />} />
 
+        <Route path="design/northsideWeb" element={<App content={<NorthsideWeb backlink="/webdev/design" />} />} />
         <Route path="design/gardenCom" element={<App content={<GardenCom backlink="/webdev/design" />} />} />
         <Route path="design/garageDesign" element={<App content={<GarageDesign backlink="/webdev/design" />} />} />
         <Route path="design/isaBanner" element={<App content={<IsaBanner backlink="/webdev/design" />} />} />
