@@ -47,6 +47,15 @@ const work_garageDesign =
   skill: 'User Interface | Web Design | Figma',
   context: 'School Project, Individual, 2022'
 }
+const work_northsideWeb =
+{
+  link: 'northsideWeb',
+  image: '/img/banner-northsideWeb.png',
+  title: 'Northside Foursquare Church Website Re-design',
+  type: 'UI/UX design',
+  skill: 'Figma | Typeform',
+  context: 'School Project, Group, 2023'
+}
 
 //Graphic Design
 const work_isaBanner =
@@ -204,6 +213,7 @@ export const worklist_program = [
 ];
 
 export const worklist_uiux = [
+  work_northsideWeb,
   work_gardenCom,
   work_garageDesign
 ];
@@ -240,6 +250,7 @@ export const worklist_webdev2023_design = [
 
 
 export const worklist_design2023 = [
+  work_northsideWeb,
   work_gardenCom,
   work_garageDesign,
   work_unsettled,

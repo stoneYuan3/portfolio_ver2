@@ -271,6 +271,7 @@ footer p{
 }
 .section-work p a{
     text-decoration: underline;
+    color:brown;
 }
 .section-work img{
     max-width: 60rem;
@@ -484,6 +485,12 @@ figcaption{
 .sectionList .imgHori30rem{
     max-width: 30rem;
 }
+
+/* .sectionList p ul li{
+    word-break: normal;
+    list-style-type: circle;
+    list-style-position: inside;
+} */
 
 /* <1440px */
 @media screen and (max-width: 90em){

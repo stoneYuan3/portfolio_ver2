@@ -16,6 +16,7 @@ import { Edusim } from './pages/work_articles/programming/edusim';
 
 import { GardenCom } from './pages/work_articles/uiux/gardencom';
 import { GarageDesign } from './pages/work_articles/uiux/garageDesign';
+import { NorthsideWeb } from './pages/work_articles/uiux/northsideWeb';
 
 import { CmcSermon } from './pages/work_articles/graphic/cmcSermon';
 import { IsaBanner } from './pages/work_articles/graphic/isaBanner';
@@ -91,7 +92,8 @@ root.render(
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/" />} />} />
         <Route path="cheryHomePage" element={<App content={<CheryHomePage backlink="/" />} />} />
-
+        
+        <Route path="uiux/northsideWeb" element={<App content={<NorthsideWeb backlink="/uiux" />} />} />
         <Route path="uiux/gardenCom" element={<App content={<GardenCom backlink="/uiux" />} />} />
         <Route path="uiux/garageDesign" element={<App content={<GarageDesign backlink="/uiux" />} />} />
 
@@ -143,6 +145,7 @@ root.render(
 
         <Route path="about" element={<App content={<AboutMe />} />} />
 
+        <Route path="northsideWeb" element={<App content={<NorthsideWeb backlink="/design" />} />} />
         <Route path="gardenCom" element={<App content={<GardenCom backlink="/design" />} />} />
         <Route path="garageDesign" element={<App content={<GarageDesign backlink="/design" />} />} />
         <Route path="EDImodule" element={<App content={<EDImodule backlink="/design" />} />} />
