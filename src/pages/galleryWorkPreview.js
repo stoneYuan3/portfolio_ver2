@@ -291,9 +291,17 @@ export const worklist_2024SAPcomm_beyond = [
 ]
 
 
+// export const worklist_playground = [
+//   work_belgiumMissionPoster,
+//   playground_hanfuMaking,
+//   playground_christianArtistFellowship,
+//   playground_lukeposters,
+//   playground_resurrection,
+//   work_cmcSermon,
+//   playground_buildingAssetsLogo
+// ]
 export const worklist_playground = [
   work_belgiumMissionPoster,
-  playground_hanfuMaking,
   playground_christianArtistFellowship,
   playground_lukeposters,
   playground_resurrection,
