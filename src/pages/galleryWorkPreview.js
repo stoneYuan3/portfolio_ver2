@@ -279,7 +279,6 @@ export const worklist_2024SAPcomm = [
   work_EDImodule,
   work_willFaliureFilm,
 ]
-
 export const worklist_2024SAPcomm_beyond = [
   work_jeTourDemo1,
   work_jeTourMap,
@@ -291,15 +290,32 @@ export const worklist_2024SAPcomm_beyond = [
 ]
 
 
-// export const worklist_playground = [
-//   work_belgiumMissionPoster,
-//   playground_hanfuMaking,
-//   playground_christianArtistFellowship,
-//   playground_lukeposters,
-//   playground_resurrection,
-//   work_cmcSermon,
-//   playground_buildingAssetsLogo
-// ]
+export const worklist_2024MotionEnergy = [
+  work_northsideWeb,
+  work_garageDesign,
+  work_unsettled,
+  work_EDImodule,
+  work_isaBanner,
+]
+export const worklist_2024MotionEnergy_beyond = [
+  work_gardenCom,
+  work_jeTourDemo1,
+  work_jeTourMap,
+  work_riskmap,
+  work_edusim,
+]
+
+
+export const worklist_playground_2 = [
+  work_belgiumMissionPoster,
+  playground_hanfuMaking,
+  playground_christianArtistFellowship,
+  playground_lukeposters,
+  playground_resurrection,
+  work_cmcSermon,
+  playground_buildingAssetsLogo
+]
+
 export const worklist_playground = [
   work_belgiumMissionPoster,
   playground_christianArtistFellowship,

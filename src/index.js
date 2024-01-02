@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { App, Nav } from './App';
 import { Gallery,GalleryNoNav,GalleryWebdev, Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
-import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023, worklist_2024SAPcomm,worklist_2024SAPcomm_beyond } from './pages/galleryWorkPreview';
-import { worklist_playground, worklist_playground_arcTeryx } from './pages/galleryWorkPreview';
+import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023, worklist_2024SAPcomm,worklist_2024SAPcomm_beyond,worklist_2024MotionEnergy,worklist_2024MotionEnergy_beyond } from './pages/galleryWorkPreview';
+import { worklist_playground, worklist_playground_arcTeryx, worklist_playground_2 } from './pages/galleryWorkPreview';
 
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
@@ -45,10 +45,10 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const playgroundRoutes = (backlink) => {
+const playgroundRoutes = (backlink, content) => {
   return (
     <>
-      <Route path="playground" element={<App content={<Playground content={worklist_playground}/>} />} />
+      <Route path="playground" element={<App content={<Playground content={content}/>} />} />
       <Route path="playground/cmcSermon" element={<App content={<CmcSermon backlink={backlink} />} />} />
       <Route path="playground/buildingAssetsLogo" element={<App content={<BuildingAssetsLogo backlink={backlink} />} />} />
       <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink={backlink} />} />} />
@@ -82,7 +82,7 @@ root.render(
         <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/playground" />} />} />
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/playground" />} />} />
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} /> */}
-        ${playgroundRoutes("/playground")}
+        ${playgroundRoutes("/playground",worklist_playground)}
         
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
@@ -130,7 +130,7 @@ root.render(
         <Route path="design/unsettled" element={<App content={<UnSettled backlink="/webdev/design" />} />} />
         <Route path="design/willFaliureFilm" element={<App content={<WillFaliure backlink="/webdev/design" />} />} />
 
-        ${playgroundRoutes("/webdev/playground")}
+        ${playgroundRoutes("/webdev/playground",worklist_playground)}
 
         
       </Route>
@@ -158,7 +158,35 @@ root.render(
         <Route path="beyondDesign/edusim" element={<App content={<Edusim backlink="/design/beyondDesign" />} />} />
         <Route path="beyondDesign/willFaliureFilm" element={<App content={<WillFaliure backlink="/design/beyondDesign" />} />} />
 
-        ${playgroundRoutes("/design/playground")}
+        ${playgroundRoutes("/design/playground",worklist_playground)}
+
+      </Route>
+
+
+      {/* 2024 Moment Energy page set*/}
+      {/* ///////////////////// */}
+      {/* ///////////////////// */}
+      <Route path="/2024MomentEnergy" element={<Nav homelink="/2024MomentEnergy"/>}>
+        {/* <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} /> */}
+        <Route index element={<App content={<Gallery content={worklist_2024MotionEnergy} navType="general" page="main" backlink="/2024MomentEnergy"/>} />} />
+        <Route path="others" element={<App content={<Gallery content={worklist_2024MotionEnergy_beyond} navType="general" page="side1" backlink="/2024MomentEnergy" />} />} />
+
+        <Route path="about" element={<App content={<AboutMe />} />} />
+
+        <Route path="northsideWeb" element={<App content={<NorthsideWeb backlink="/2024MomentEnergy" />} />} />
+        <Route path="garageDesign" element={<App content={<GarageDesign backlink="/2024MomentEnergy" />} />} />
+        <Route path="EDImodule" element={<App content={<EDImodule backlink="/2024MomentEnergy" />} />} />
+        <Route path="isaBanner" element={<App content={<IsaBanner backlink="/2024MomentEnergy" />} />} />
+        <Route path="unsettled" element={<App content={<UnSettled backlink="/2024MomentEnergy" />} />} />
+
+        <Route path="others/gardenCom" element={<App content={<GardenCom backlink="/2024MomentEnergy/others" />} />} />
+        <Route path="others/jetourDemo" element={<App content={<JetourDemo backlink="/2024MomentEnergy/others" />} />} />
+        <Route path="others/jeTourMap" element={<App content={<JetourMap backlink="/2024MomentEnergy/others" />} />} />
+        <Route path="others/riskmap" element={<App content={<Riskmap backlink="/2024MomentEnergy/others" />} />} />
+        <Route path="others/edusim" element={<App content={<Edusim backlink="/2024MomentEnergy/others" />} />} />
+        <Route path="others/willFaliureFilm" element={<App content={<WillFaliure backlink="/2024MomentEnergy/others" />} />} />
+
+        ${playgroundRoutes("/2024MomentEnergy/playground",worklist_playground_2)}
 
       </Route>
 
@@ -169,7 +197,7 @@ root.render(
       <Route path="/2024arcTeryx" element={<Nav homelink="/2024arcTeryx"/>}>
         {/* <Route index element={<App content={<GalleryNoNav content={worklist_design2023}/>} />} /> */}
         <Route index element={<App content={<Gallery content={worklist_2024arcTeryx} navType="design" page="main" backlink="/2024arcTeryx"/>} />} />
-        <Route path="beyondDesign" element={<App content={<Gallery content={worklist_design2023_beyond} navType="design" page="side1" backlink="/2024arcTeryx" />} />} />
+        <Route path="beyondDesign" element={<App content={<Gallery content={worklist_design2023_beyond} navType="general" page="side1" backlink="/2024arcTeryx" />} />} />
 
         <Route path="about" element={<App content={<AboutMe />} />} />
 
