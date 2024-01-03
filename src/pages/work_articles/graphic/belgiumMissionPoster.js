@@ -28,12 +28,15 @@ export const BelgiumMissionPoster=(props)=>{
                         <div className="sectionList">
                             <img src="/img/gallery/belgiumMissionPoster/f2r.png"/>
                             <p className="demoComments">Final poster. The address of the concert changed due to accidents when my friend arrived in Belgium, and they had to reprint the poster there. I adjusted the poster to A4 before I sent it since it is more common in Europe. </p>
+                            <img src="/img/gallery/belgiumMissionPoster/field1.jpeg"/>
+                            <p className="demoComments">An example of my poster being used, photo taken by the team.</p>
                         </div>
+
                         <div className="sectionList">
                             <p><a href="https://www.figma.com/file/ECRUDrAbhRms3Id1vKcAOJ/poster-luke-112-09-26?type=design&node-id=0-1&mode=design&t=qUMsNTRUe63zALds-0">Original copy of the poster can be found here in Figma</a></p>
                             <p>The theme of the concert is “Value of life”, and I tried to convey this idea through the image of three people playing music on a large empty field. What are you going to do with your life? Listen to that music and you will know, hopefully.</p>
                         </div>
-
+                        
                         <h2>Process/Challenge:</h2>
                         <div className="sectionList">
                             <p>One of the most significant experiences I had in this project was the feedback I received from my friend as well as other people in the mission team, which helped me to improve on details that I didn’t pay much attention to before. </p>
