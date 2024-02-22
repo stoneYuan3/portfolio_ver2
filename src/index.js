@@ -30,6 +30,7 @@ import { JetourMap } from './pages/work_articles/webdev_pmpark/jetourMap';
 import { JetourDemo } from './pages/work_articles/webdev_pmpark/jetourDemo';
 import { CheryHomePage } from './pages/work_articles/webdev_pmpark/cheryHomePage';
 import { WcwlBadge } from './pages/work_articles/webdev_pmpark/wcwlBadge';
+import { SelaProject } from './pages/work_articles/programming/selaProject';
 
 import { BuildingAssetsLogo } from './pages/work_articles/playground/buildingAssetsLogo'
 import { EcbcExhibition } from './pages/work_articles/playground/ecbcExhibition'
@@ -115,6 +116,7 @@ root.render(
 
         <Route path="about" element={<App content={<AboutMe />} />} />
 
+        <Route path="sela" element={<App content={<SelaProject backlink="/webdev" />} />} />
         <Route path="jeTourMap" element={<App content={<JetourMap backlink="/webdev" />} />} />
         <Route path="jetourDemo" element={<App content={<JetourDemo backlink="/webdev" />} />} />
         <Route path="wcwlBadge" element={<App content={<WcwlBadge backlink="/webdev" />} />} />

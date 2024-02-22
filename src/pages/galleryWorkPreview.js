@@ -154,6 +154,18 @@ const work_wcwlBadge =
   context: 'Internship Project, individual, 2023'
 }
 
+
+const work_sela = 
+{
+  link: 'sela',
+  image: '/img/banner-sela.png',
+  title: 'Sela Bible Poetry Analysis App',
+  type: 'Front-end Web Development Project',
+  skill: 'HTML/CSS | Typescript | React.js | Git ',
+  context: 'ONGOING Volunteer Project, Group, 2023'
+}
+
+
 const playground_buildingAssetsLogo = 
 {
   link: 'buildingAssetsLogo',
@@ -233,6 +245,7 @@ export const worklist_isap = [
 ];
 
 export const worklist_webdev2023 = [
+  work_sela,
   work_jeTourMap,
   work_jeTourDemo1,
   work_cheryHomePage,

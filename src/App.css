@@ -486,11 +486,13 @@ figcaption{
     max-width: 30rem;
 }
 
-/* .sectionList p ul li{
-    word-break: normal;
-    list-style-type: circle;
-    list-style-position: inside;
-} */
+.link{
+    margin-bottom: 1.5rem;
+}
+.link img{
+    margin-bottom: 0;
+}
+
 
 /* <1440px */
 @media screen and (max-width: 90em){
