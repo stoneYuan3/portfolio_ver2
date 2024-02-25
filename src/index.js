@@ -7,7 +7,7 @@ import { App, Nav } from './App';
 import { Gallery,GalleryNoNav,GalleryWebdev, Playground, AboutMe, Resume } from './pages/pages';
 import { worklist_program,worklist_uiux,worklist_art } from './pages/galleryWorkPreview';
 import { worklist_isap,worklist_2024arcTeryx, worklist_webdev2023, worklist_webdev2023_design,worklist_design2023_beyond, worklist_design2023, worklist_2024SAPcomm,worklist_2024SAPcomm_beyond,worklist_2024MotionEnergy,worklist_2024MotionEnergy_beyond } from './pages/galleryWorkPreview';
-import { worklist_playground, worklist_playground_arcTeryx, worklist_playground_2 } from './pages/galleryWorkPreview';
+import { worklist_playground, worklist_playground_arcTeryx, worklist_playground_2, worklist_playground_full } from './pages/galleryWorkPreview';
 
 
 import { Riskmap } from './pages/work_articles/programming/riskmap';
@@ -83,7 +83,7 @@ root.render(
         <Route path="playground/resurrection" element={<App content={<EcbcExhibition backlink="/playground" />} />} />
         <Route path="playground/friendSermonPosters" element={<App content={<FriendSermonPosters backlink="/playground" />} />} />
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} /> */}
-        ${playgroundRoutes("/playground",worklist_playground)}
+        ${playgroundRoutes("/playground",worklist_playground_full)}
         
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />

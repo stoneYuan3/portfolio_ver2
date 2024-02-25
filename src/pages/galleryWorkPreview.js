@@ -344,3 +344,12 @@ export const worklist_playground_arcTeryx = [
   work_cmcSermon,
   playground_buildingAssetsLogo
 ]
+export const worklist_playground_full = [
+  playground_hanfuMaking,
+  work_belgiumMissionPoster,
+  playground_christianArtistFellowship,
+  playground_lukeposters,
+  playground_resurrection,
+  work_cmcSermon,
+  playground_buildingAssetsLogo
+]
