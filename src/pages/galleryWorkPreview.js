@@ -232,6 +232,7 @@ export const worklist_uiux = [
 
 export const worklist_art = [
   work_isaBanner,
+  work_EDImodule,
   work_unsettled,
   work_willFaliureFilm
 ];
@@ -267,9 +268,9 @@ export const worklist_design2023 = [
   work_northsideWeb,
   work_gardenCom,
   work_garageDesign,
-  work_unsettled,
   work_EDImodule,
   work_isaBanner,
+  work_unsettled,
 ]
 export const worklist_design2023_beyond = [
   work_jeTourDemo1,
