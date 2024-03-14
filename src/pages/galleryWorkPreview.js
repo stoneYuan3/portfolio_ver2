@@ -215,6 +215,7 @@ const playground_hanfuMaking =
 
 
 export const worklist_program = [
+  work_sela,
   work_jeTourMap,
   work_jeTourDemo1,
   work_wcwlBadge,

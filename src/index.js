@@ -85,6 +85,7 @@ root.render(
         <Route path="playground/christianArtistFellowship" element={<App content={<ChristianArtistFellowship backlink="/playground" />} />} /> */}
         ${playgroundRoutes("/playground",worklist_playground_full)}
         
+        <Route path="sela" element={<App content={<SelaProject backlink="/" />} />} />
         <Route path="riskmap" element={<App content={<Riskmap backlink="/" />} />} />
         <Route path="garage" element={<App content={<Garage backlink="/" />} />} />
         <Route path="edusim" element={<App content={<Edusim backlink="/" />} />} />
