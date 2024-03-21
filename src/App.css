@@ -259,7 +259,8 @@ footer p{
 .section-work p{
     max-width: 50rem;
     margin-bottom: 2.5rem;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
+    font-size: 1rem;
     line-height: 2rem;
 /*    font-family: "Adobe Garamond Pro";*/
 }
@@ -370,7 +371,7 @@ figcaption{
     /* margin-left: 4rem; */
     margin-right: 22rem;
     margin-bottom: 2.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 .section-about p em{
