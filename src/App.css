@@ -419,7 +419,7 @@ figcaption{
 .sectionList h3,
 .sectionList h4{
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 .sectionList p, .sectionList li{
     margin-bottom: 1rem;
@@ -491,6 +491,12 @@ figcaption{
 }
 .link img{
     margin-bottom: 0;
+}
+
+
+.sectionList .ul-normal li{
+    list-style: square;
+    word-break: normal;
 }
 
 

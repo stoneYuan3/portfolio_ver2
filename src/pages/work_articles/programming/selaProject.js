@@ -27,7 +27,7 @@ export const SelaProject=(props)=>{
                             </a>
                         </div>
 
-                        <div className="sectionList">
+                        {/* <div className="sectionList">
                             <p>
                                 This is a volunteer web development project. One of my friends in a local church knows somebody who can read Hebrew and is very interested in Bible Poetry. He found that the current English translation for Bible poetries does not respect the original Hebrew grammar structure, and would like to develop a web application that helps people to better analyse those poetries with the original grammar order in mind. He asked my friend, who has a computer science background, to help and my friend organized a small team of 4-5 people including me to realize this web application. 
                             </p>
@@ -39,6 +39,24 @@ export const SelaProject=(props)=>{
                             <h2>Gain:</h2>
                             <p>
                                 Gained a much deeper understanding towards React.js. Realized many crucial front-end functionalities with React class, useState and some external plugins such as React Colour. Gained experience in using version control tools (Git) in complex teamwork including merging codes from other team members, forking source code, sending push requests and so on.
+                            </p>
+                        </div> */}
+                        <div className="sectionList">
+                            <h2>Summary</h2>
+                            <p>
+                                <ul className="ul-normal">
+                                    <li>This is a volunteer web development project for a non-profit organization.</li>
+                                    <li>This project is about developing a bible poetry reader that helps users to analysis bible poetry in the original Hebrew grammar structure.</li>
+                                    <li>I serve as the front-end developer of the team starting at July 2023. The team has 2 front-end developer, 1 back-end developer, 1 project mananger and a bible expert who doesn't have programming background.</li>
+                                    <li>So far I developed the front-end interface for the reader itself, including functionalities such as selecting poetry words, changing poetry word colour and adjust font size.</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                        <div className="sectionList">
+                            <h2>Gain:</h2>
+                            <p>
+                                Gained a  deeper understanding towards React.js. Realized many crucial front-end functionalities with React class, useState and some external plugins such as React Colour. Gained experience in using version control tools (Git) in complex teamwork including merging codes from other team members, forking source code, sending push requests and so on.
                             </p>
                         </div>
 
