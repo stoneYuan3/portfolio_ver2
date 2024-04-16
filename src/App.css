@@ -260,8 +260,8 @@ footer p{
     max-width: 50rem;
     margin-bottom: 2.5rem;
     /* font-size: 1.25rem; */
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
 /*    font-family: "Adobe Garamond Pro";*/
 }
 .p-work-imageCap{
@@ -270,7 +270,7 @@ footer p{
     margin-top: 0.5rem;
     text-align: center;
 }
-.section-work p a{
+.section-work p a, p a{
     text-decoration: underline;
     color:brown;
 }
@@ -371,25 +371,33 @@ figcaption{
     /* margin-left: 4rem; */
     margin-right: 22rem;
     margin-bottom: 2.5rem;
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.45rem;
+    line-height: 2.5rem;
+    max-width: 50rem;
 }
 .section-about p em{
     color: #A6A6A6;
 }
+.section-about .charaTags{
+    font-size: 1.75rem;
+    line-height: 3rem;
+    /* max-width: 35rem; */
+}
+
 .section-mybio{
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.25rem;
 }
 .section-mybio h2{
     margin-top: 0;
     margin-bottom: 1.25rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .section-mybio p{
     margin:0;
     margin-bottom: 0.75rem;
+    font-size: 1.25rem;
 }
 .section-mybio img{
 /*    width: 9rem;*/
@@ -498,6 +506,10 @@ figcaption{
 .sectionList .ul-normal li{
     list-style: square;
     word-break: normal;
+}
+
+.slash{
+    text-decoration-line: line-through;
 }
 
 

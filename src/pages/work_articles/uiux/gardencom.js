@@ -16,6 +16,11 @@ export const GardenCom = (props) => {
                         workSkill={'User Interface Design, User Experience Design, Figma, Protopie'}
                         workContext={'School Project, Group, 2022'}
                     />
+                    <div className="sectionList">
+                        <a className="flex flex-align-center link" href="https://cloud.protopie.io/p/cf3f94f3db">
+                            <img src="/img/base/link-webGeneral.svg" />Prototype Link
+                        </a>
+                    </div>
 
                     <div id="section-work-body">
 
@@ -28,7 +33,7 @@ export const GardenCom = (props) => {
                         <p> The final outcome of this project is a prototype of the app done in Protopie and a promotional video for the app.</p>
 
 
-                        <h2>Final Outcome Video</h2>
+                        {/* <h2>Final Outcome Video</h2>
 
                         <div id="section-videoDemo">
                         <section>
@@ -36,7 +41,7 @@ export const GardenCom = (props) => {
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/zLMV5tn9jiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </section>
-                        </div>
+                        </div> */}
 
                         <h2>Process</h2>
                         <p>The initial problem that we were focusing on is the lack of connection between small farmers and consumers. We interviewed some local small farm owners, and we find that some of them complained about the lack of public exposure for their business.</p>
