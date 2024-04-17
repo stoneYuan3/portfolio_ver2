@@ -162,7 +162,7 @@ const work_sela =
   title: 'Sela Bible Poetry Analysis App',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Typescript | React.js | Git ',
-  context: 'ONGOING Volunteer Project, Group, 2023'
+  context: 'Ongoing Volunteer Project, Group, 2023'
 }
 
 

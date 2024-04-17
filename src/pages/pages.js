@@ -114,10 +114,13 @@ export const AboutMe = (props) => {
                         Programmer, Designer, <a href="https://syuan-portfolio.netlify.app/webdev/playground/hanfuMaking">Talior</a>, Artist, <a href="https://www.flickr.com/photos/200092524@N07/">Photographer</a>, Gardener, Tea Drinker, <a href="https://store.steampowered.com/app/359320/Elite_Dangerous/" className="slash">Elite: Dangerous Commander</a>... and More.
                     </p>
                     <p>
-                        I am a person who enjoys crafting and creative activities, no matter they are digital or physical.  				
+                        Studies at Simon Fraser University, School of Interactive Arts and Technology (Bachelor of Art)				
                     </p>
                     <p>
-                        Being somewhat introverted, I am proud of my diverse passions. Other than keeping me entertained, they also enable me to connect and contribute to the communities I care about in my way.				
+                        Focuses on web development but enjoys all kinds of crafting and creative activities, no matter digital or physical.  			
+                    </p>
+                    <p>
+                        Currently volunteering as the front-end developer of the <a href="https://biblepoetry.org/">Sela Project team</a>, the photographer of <a href="https://www.vancouverhanfu.com/en">Vancouver Hanfu Culture Association</a> and the graphic designer of <a href="https://vanartistfellowship.wordpress.com/">Vancouver Christian Arts Fellowship</a>.			
                     </p>
                 </section>
             </div>

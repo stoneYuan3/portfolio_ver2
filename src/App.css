@@ -303,6 +303,46 @@ footer p{
     margin-bottom: 1.5rem;
 }
 
+
+.section-work-basics.workIntroBox{
+    filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.25));
+    background-color: white;
+    border-radius: 1rem;
+    padding:1.25rem 3.25rem;
+    width: fit-content;
+}
+.section-work-basics.workIntroBox h3{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.section-work-basics .workIntro{
+    display: flex;
+    flex-direction: row;
+}
+.section-work-basics .workIntro .introColumn{
+    margin-right: 3rem;
+}
+ection-work-basics .workIntro .introColumn div{
+    max-width: 25rem;
+}
+.section-work-basics .workIntro .introColumn, 
+.section-work-basics .workIntro .introColumn div{
+    display: flex;
+    flex-direction: column;
+}
+.section-work-basics.workIntroBox .workIntroLinks{
+    display: flex;
+    flex-direction: row;
+    margin:1rem 0;
+}
+.section-work-basics.workIntroBox .workIntroLinks .link{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+
 /*ref: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp*/
 #section-videoDemo{
     width: 50rem;
