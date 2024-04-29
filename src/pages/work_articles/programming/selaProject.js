@@ -87,20 +87,20 @@ export const SelaProject=(props)=>{
                             </p>
                         </div>
                         
-                        {/* <div>
+                        <div>
                             <div className="sectionList demoHead">
                                 <h2>Demo:</h2>
                             </div>
-                            <div className="sectionList demoHead">
+                            {/* <div className="sectionList demoHead">
                                 <img src="/img/gallery/sela/interface-current.png"/>
                                 <p className="demoComments">The current interface</p>
-                            </div>
+                            </div> */}
                             <div className="sectionList">
-                                <img src="/img/gallery/sela/demo-changeColour.gif"/>
-                                <p className="demoComments">Newest feature: select and change colour</p>
+                                <img src="/img/gallery/sela/demo-color-0429.gif"/>
+                                <p className="demoComments">Current status of the select and change colour feature</p>
                             </div>
 
-                            <div className="sectionList">
+                            {/* <div className="sectionList">
                                 <h2>Process/Challenge:</h2>
                                 <p>
                                     This project is one of the most challenging projects I encountered so far. Our initial inspiration comes from an existing Bible reading tool called <a href="https://www.stepbible.org/">STEP Bible</a>, which is a fairly complex application. Some of our basic front-end features inspired by the STEP Bible will allow users to select each individual bible words, highlight those words in different colour and so on. Those functionalities are quite new to me given my previous experience with React.js.
@@ -156,8 +156,8 @@ export const SelaProject=(props)=>{
                                 <p className="demoComments">My notes for this feature. It also has plans for other features such as changing the word box colour.</p>
                                 <img src="/img/gallery/sela/demo-fontsize.gif"/>
                                 <p className="demoComments">Result</p>
-                            </div>
-                        </div> */}
+                            </div> */}
+                        </div>
                         
                     </div>
 
