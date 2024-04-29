@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,13 @@ export const EcbcExhibition =(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+                    <WorkIntro 
                         workType={"Drawing"}
                         workSkill={"Photoshop"}
-                        workContext={"Recreational Project, individual, 2022"}
-                    />
-                    
+                        workContext={"Recreational Project, individual"}
+                        time={"2022"}
+                    />     
+
                     <div id="section-work-body">
                         <p>
                         Invited to help out by my church friends in the Christian art exhibition "Resurrection" located in the Burnaby Evangelical Chinese Bible Church (ECBC), in May 2022. Helped to set up the main installation art and also contributed two of my drawings to the exhibition.

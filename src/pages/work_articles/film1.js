@@ -1,7 +1,6 @@
 import { WorkIntro } from "./commonParts"
 import { PageTitle } from "../pages";
 import { BackToGallery } from "./commonParts";
-import { WorkIntroNoBanner } from "./commonParts";
 
 export const WillFaliure = (props) => {
     return (
@@ -11,10 +10,12 @@ export const WillFaliure = (props) => {
 
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner
+
+                    <WorkIntro 
                         workType={'Short Movie'}
                         workSkill={'Filming | Editing | Premier '}
-                        workContext={'School Project, individual, 2020'}
+                        workContext={'School Project, individual'}
+                        time={"2020"}
                     />
 
                     <div id="section-work-body">

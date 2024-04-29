@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,14 @@ export const BelgiumMissionPoster=(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+
+                    <WorkIntro 
                         workType={"Graphic Design"}
                         workSkill={"Photoshop, Figma, Midjourney"}
-                        workContext={"Volunteer Project, Individual, 2023"}
-                    />
-                    
+                        workContext={"Volunteer Project, Individual"}
+                        time={"2023"}
+                    /> 
+
                     <div id="section-work-body">
                         <h2>Background</h2>
                         <p>

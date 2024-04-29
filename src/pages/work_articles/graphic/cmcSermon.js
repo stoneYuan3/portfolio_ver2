@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,13 @@ export const CmcSermon=(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+
+                    <WorkIntro 
                         workType={"Graphic Design"}
                         workSkill={"Photoshop, Illustrator, Tablet Drawing"}
-                        workContext={"Volunteer Project, Individual, 2021"}
-                    />
-                    
+                        workContext={"Volunteer Project, Individual"}
+                        time={"2021"}
+                    /> 
                     <div id="section-work-body">
                         <p>
                             This is a long-term volunteer project with the Coquitlam Mandarin Church, which lasted for three months. My task was to design Sunday sermon posters each week.

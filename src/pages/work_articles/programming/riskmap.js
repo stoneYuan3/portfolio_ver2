@@ -1,4 +1,4 @@
-import { WorkIntro } from "../commonParts"
+import { WorkIntro, WorkIntroBox } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -12,14 +12,19 @@ export const Riskmap=(props)=>{
                 <div className="flex flex-column section-work">
                     <WorkIntro 
                         banner={"/img/banner-riskmap.png"}
-                        linkHref={"https://github.com/stoneYuan3/529-Garage-Risk-Map"}
-                        linkIcon={"/img/base/link-github.svg"}
-                        linkTitle={"View in Github"}
                         workType={"Full Stack Website"}
                         workSkill={"HTML/CSS, JQuery, PHP, MySQL, Git"}
-                        workContext={"School Project, Individual, 2022"}
+                        workContext={"School Project, Individual"}
+                        time={"2022"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://github.com/stoneYuan3/529-Garage-Risk-Map">
+                                    <img src="/img/base/link-github.svg" />Github Link
+                                </a>
+                            </div>
+                        }
                     />
-                    
+
                     <div id="section-work-body">
                         <p>
                             This is a hybrid project that include both User Experience design and web development. To complete the project, I researched a client that may need design intervention, figured out a solution for the client, and finally develop the

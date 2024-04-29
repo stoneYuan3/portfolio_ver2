@@ -13,25 +13,7 @@ export const SelaProject=(props)=>{
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
 
-                        {/* new work intro */}
-                        {/* <div className="section-work-basics workIntroBox">
-                            <WorkIntroBox 
-                                workType={"Front-end development"}
-                                workSkill={"HTML, CSS, Typescript, React.js, Git"}
-                                workContext={"Volunteer project, Team "}
-                                time={"July 2023 - present"}
-                            />
-                            <div className="sectionList workIntroLinks">
-                                <a className="link" href="https://github.com/teamsela/sela-web">
-                                    <img src="/img/base/link-github.svg" />Github Link
-                                </a>
-                                <a className="link" href="https://biblepoetry.org/">
-                                    <img src="/img/base/link-webGeneral.svg" />Team Website
-                                </a>
-                            </div>
-                        </div> */}
-
-                        <WorkIntroNoBanner 
+                        {/* <WorkIntroNoBanner 
                             workType={"Front-end development"}
                             workSkill={"HTML, CSS, Typescript, React.js, Git"}
                             workContext={"Volunteer project, Team, July 2023 - present "}
@@ -43,7 +25,7 @@ export const SelaProject=(props)=>{
                             <a className="flex flex-align-center link" href="https://biblepoetry.org/">
                                 <img src="/img/base/link-webGeneral.svg" />Team Website
                             </a>
-                         </div>
+                         </div> */}
 
                         {/* <div className="sectionList">
                             <p>
@@ -59,6 +41,28 @@ export const SelaProject=(props)=>{
                                 Gained a much deeper understanding towards React.js. Realized many crucial front-end functionalities with React class, useState and some external plugins such as React Colour. Gained experience in using version control tools (Git) in complex teamwork including merging codes from other team members, forking source code, sending push requests and so on.
                             </p>
                         </div> */}
+
+                        {/* new work intro */}
+                        <WorkIntro 
+                            workType={"Front-end development"}
+                            workSkill={"HTML, CSS, Typescript, React.js, Git"}
+                            workContext={"Volunteer project, Team "}
+                            time={"July 2023 - present"}
+                            link={
+                                <div className="sectionList workIntroLinks">
+                                    <a className="link" href="https://github.com/teamsela/sela-webapp">
+                                        <img src="/img/base/link-github.svg" />Github Link
+                                    </a>
+                                    <a className="link" href="https://biblepoetry.org/">
+                                        <img src="/img/base/link-webGeneral.svg" />Team Website
+                                    </a>
+                                    <a className="link" href="https://sela-webapp.vercel.app/">
+                                        <img src="/img/base/link-webGeneral.svg" />Deployed Prototype
+                                    </a>
+                                </div>
+                            }
+                        />
+
                         <div className="sectionList">
                             <h2>Summary</h2>
                             <p>
@@ -73,9 +77,6 @@ export const SelaProject=(props)=>{
                         </div>
                         <div className="sectionList">
                             <h2>Gain:</h2>
-                            {/* <p>
-                                Gained a  deeper understanding towards React.js. Realized many crucial front-end functionalities with React class, useState and some external plugins such as React Colour. Gained experience in using version control tools (Git) in complex teamwork including merging codes from other team members, forking source code, sending push requests and so on.
-                            </p> */}
                             <p>
                                 <ul className="ul-normal">
                                     <li>Gained a deeper understanding towards React.js.</li>

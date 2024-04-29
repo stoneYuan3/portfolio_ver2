@@ -12,14 +12,19 @@ export const Edusim=(props)=>{
                 <div className="flex flex-column section-work">
                     <WorkIntro 
                         banner={"/img/banner-edusim.png"}
-                        linkHref={"https://github.com/stoneYuan3/PRCeducationSimulator-IAT265Final"}
-                        linkIcon={"/img/base/link-github.svg"}
-                        linkTitle={"View in Github"}
                         workType={"Java Mini Game"}
                         workSkill={"Java"}
-                        workContext={"School Project, Individual, 2020"}
-                    />
-                    
+                        workContext={"School Project, Individual"}
+                        time={"2020"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://github.com/stoneYuan3/PRCeducationSimulator-IAT265Final">
+                                    <img src="/img/base/link-github.svg" />Github Link
+                                </a>
+                            </div>
+                        }
+                    />        
+
                     <div id="section-work-body">
 
                         <p>

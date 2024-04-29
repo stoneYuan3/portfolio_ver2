@@ -1,4 +1,4 @@
-import { WorkIntroNoLink } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,17 +10,21 @@ export const GardenCom = (props) => {
 
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoLink
+
+                    <WorkIntro 
                         banner={"/img/banner-communityGarden.png"}
                         workType={'UI/UX design'}
                         workSkill={'User Interface Design, User Experience Design, Figma, Protopie'}
-                        workContext={'School Project, Group, 2022'}
-                    />
-                    <div className="sectionList">
-                        <a className="flex flex-align-center link" href="https://cloud.protopie.io/p/cf3f94f3db">
-                            <img src="/img/base/link-webGeneral.svg" />Prototype Link
-                        </a>
-                    </div>
+                        workContext={"School Project, Group"}
+                        time={"2022"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://cloud.protopie.io/p/cf3f94f3db">
+                                    <img src="/img/base/link-webGeneral.svg" />Prototype Link
+                                </a>
+                            </div>
+                        }
+                    />  
 
                     <div id="section-work-body">
 

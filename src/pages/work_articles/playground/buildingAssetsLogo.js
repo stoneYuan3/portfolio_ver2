@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,12 @@ export const BuildingAssetsLogo =(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+                    <WorkIntro 
                         workType={"Graphic Design"}
                         workSkill={"Paint Tool SAI 2, Figma"}
-                        workContext={"Volunteer Project, Individual, 2021"}
-                    />
-                    
+                        workContext={"Volunteer Project, Individual"}
+                        time={"2021"}
+                    />                    
                     <div id="section-work-body">
                         <p>
                         Back in 2021 I volunteered with a charity organization called Building Assets, an organization focusing on building education infrastructures in Myanmar. The organization was planning to have a new logo back then and I proposed some new logo ideas for them. 

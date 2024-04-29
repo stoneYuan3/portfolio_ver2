@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,14 +10,21 @@ export const ChristianArtistFellowship =(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <a className="flex flex-align-center linkGroup" href="https://vanartistfellowship.wordpress.com/">
-                        <img src="/img/base/link-webGeneral.svg" />View Website (Work in Progress)
-                    </a>
-                    <WorkIntroNoBanner 
+
+                    <WorkIntro 
                         workType={"Web Design and Wordpress Web Development"}
                         workSkill={"Wordpress, Figma"}
-                        workContext={"Volunteer Project, Group, 2023, Ongoing"}
-                    />
+                        workContext={"Volunteer Project, Group"}
+                        time={"2023 - present"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://vanartistfellowship.wordpress.com/">
+                                    <img src="/img/base/link-webGeneral.svg" />Website Link (Work in Progress)
+                                </a>
+                            </div>
+                        }
+                    />                    
+                      
                     <div id="section-work-body">
                         <p>
                             I have some friends who are in the Christian Art Fellowship (sometimes referred to as the Vancouver Artist Fellowship), a non-government organization for Chinese Christian artists to discuss art and faith and worship God with their art talents. The Christian Art Fellowship is planning to have a website, and I offered to help.

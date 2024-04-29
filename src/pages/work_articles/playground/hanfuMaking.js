@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,11 +10,12 @@ export const HanfuMaking =(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+                   <WorkIntro 
                         workType={"Garment Design / Making"}
                         workSkill={"Sewing, Pattern Making, Adobe Illustrator"}
-                        workContext={"Hobby Project, ongoing"}
-                    />
+                        workContext={"Hobby Project"}
+                        time={"2022 - present"}
+                    />                        
                     
                     <div id="section-work-body">
                         <p>

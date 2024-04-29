@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,14 @@ export const EDImodule=(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+
+                    <WorkIntro 
                         workType={"Graphic Design"}
                         workSkill={"Articulate Storyline 360, Illustrator"}
-                        workContext={"Internship Project, Individual, 2022"}
-                    />
-                    
+                        workContext={"Internship Project, Individual"}
+                        time={"2022"}
+                    />     
+
                     <div id="section-work-body">
                         <h2>Background</h2>
                         <p>

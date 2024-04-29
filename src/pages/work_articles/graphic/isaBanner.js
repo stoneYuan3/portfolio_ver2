@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,12 @@ export const IsaBanner=(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+                    <WorkIntro 
                         workType={"Graphic Design"}
                         workSkill={"Photoshop"}
-                        workContext={"Internship Project, Individual, 2022"}
-                    />
-                    
+                        workContext={"Internship Project, Individual"}
+                        time={"2022"}
+                    />          
                     <div id="section-work-body">
                         <p>
                             This project was done during a graphic design internship with Simon Fraser University's Institutional Strategic Awards (ISA). For this project, my task was to design a series of website banners for ISA's website.

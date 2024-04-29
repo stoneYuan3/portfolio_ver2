@@ -1,30 +1,68 @@
 import { Link } from "react-router-dom";
  
 
+// export const WorkIntro = (props) => {
+//     return(
+//         <>  
+//             <img id="banner" src={props.banner} />
+//             <a id="link-work-github" className="flex flex-align-center" href={props.linkHref}>
+//                 <img src={props.linkIcon} />{props.linkTitle}
+//             </a>
+//             <div className="section-work-basics">
+//                 <div class="sectionList">
+//                     <h3>Type:</h3>
+//                     <p>{props.workType}</p>
+//                 </div>
+//                 <div class="sectionList">
+//                     <h3>Skills involved:</h3>
+//                     <p>{props.workSkill}</p>
+//                 </div>
+//                 <div class="sectionList">
+//                     <h3>Context:</h3>
+//                     <p>{props.workContext}</p>
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }
+
 export const WorkIntro = (props) => {
     return(
         <>  
-            <img id="banner" src={props.banner} />
-            <a id="link-work-github" className="flex flex-align-center" href={props.linkHref}>
-                <img src={props.linkIcon} />{props.linkTitle}
-            </a>
-            <div className="section-work-basics">
-                <div class="sectionList">
-                    <h3>Type:</h3>
-                    <p>{props.workType}</p>
+            {
+                props.banner ? <img id="banner" src={props.banner} /> : ""
+            }
+            <div className="section-work-basics workIntroBox">
+                <div className="sectionList workIntro">
+                    <div className="introColumn">
+                        <div>
+                            <h3>Type:</h3>
+                            <p>{props.workType}</p>
+                        </div>
+                        <div>
+                            <h3>Skills:</h3>
+                            <p>{props.workSkill}</p>
+                        </div>
+                    </div>
+                    <div className="introColumn">
+                        <div>
+                            <h3>Context:</h3>
+                            <p>{props.workContext}</p>
+                        </div>
+                        <div>
+                            <h3>Time:</h3>
+                            <p>{props.time}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sectionList">
-                    <h3>Skills involved:</h3>
-                    <p>{props.workSkill}</p>
-                </div>
-                <div class="sectionList">
-                    <h3>Context:</h3>
-                    <p>{props.workContext}</p>
-                </div>
+                {
+                    props.link ? props.link : ""
+                }
             </div>
         </>
     );
 }
+
 
 export const WorkIntroNoLink = (props) => {
     return(

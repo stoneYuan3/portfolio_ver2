@@ -1,7 +1,6 @@
 import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
-import { WorkIntroNoBanner } from "../commonParts"
 
 export const JetourDemo=(props)=>{
     return(
@@ -12,12 +11,14 @@ export const JetourDemo=(props)=>{
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
-                        <WorkIntroNoBanner 
-                            workType={"Front-end development"}
-                            workSkill={"HTML/CSS, Javascript"}
-                            workContext={"Front-end development Internship project, August 2023"}
-                        />
 
+                        <WorkIntro 
+                            workType={"Front-end development"}
+                            workSkill={"HTML, CSS, Javascript"}
+                            workContext={"Front-end development Internship project"}
+                            time={"August 2023"}
+                        /> 
+                        
                         <div className="sectionList">
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to fix the Vue.js and React.js powered map page of the original Jetour website. The original map page had issues with search bars and broken layout consistency in mobile and different language versions.
                             </p>

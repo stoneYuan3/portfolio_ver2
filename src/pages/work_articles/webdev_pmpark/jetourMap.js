@@ -1,7 +1,6 @@
 import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
-import { WorkIntroNoBanner } from "../commonParts"
 
 export const JetourMap=(props)=>{
     return(
@@ -12,11 +11,13 @@ export const JetourMap=(props)=>{
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
-                        <WorkIntroNoBanner 
+
+                        <WorkIntro 
                             workType={"Front-end development"}
                             workSkill={"HTML/CSS, Javascript, Vue.js"}
-                            workContext={"Front-end development Internship project, July 2023"}
-                        />
+                            workContext={"Front-end development Internship project"}
+                            time={"July 2023"}
+                        /> 
 
                         <div className="sectionList">
                             <p>Part of the Jetour website maintenance project mentioned in the resume. Asked to develop demos for a new set of Jetour home page designs for client review. Developed the demo with a combination of Swiper.js plugin and CSS animation.

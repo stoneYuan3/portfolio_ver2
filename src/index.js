@@ -104,7 +104,8 @@ root.render(
         <Route path="graphic/unsettled" element={<App content={<UnSettled backlink="/graphic" />} />} />
         <Route path="graphic/belgiumMissionPoster" element={<App content={<BelgiumMissionPoster backlink="/graphic" />} />} />
         <Route path="graphic/EDImodule" element={<App content={<EDImodule backlink="/graphic" />} />} />
-        
+        <Route path="graphic/willFaliureFilm" element={<App content={<WillFaliure backlink="/graphic" />} />} />
+
       </Route>
 
 

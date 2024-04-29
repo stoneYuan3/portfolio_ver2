@@ -11,15 +11,22 @@ export const GarageDesign = (props) => {
 
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
+
                     <WorkIntro 
                         banner={"/img/banner-garageDesign.png"}
-                        linkHref={"https://www.figma.com/file/s7niTjP3ENB3BknTrfAj1c/IAT334-A01-showcase?node-id=0%3A1&t=hUMBaSjQFjeTuRqh-0"}
-                        linkIcon={"/img/base/link-figma.svg"}
-                        linkTitle={"View in Figma"}
                         workType={'Website Design'}
                         workSkill={'User Interface Design, Web Design, Figma'}
-                        workContext={'School Project, Individual, 2022'}
-                    />
+                        workContext={'School Project, Individual'}
+                        time={"2022"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://www.figma.com/file/s7niTjP3ENB3BknTrfAj1c/IAT334-A01-showcase?node-id=0%3A1&t=hUMBaSjQFjeTuRqh-0">
+                                    <img src="/img/base/link-webGeneral.svg" />Figma Prototype Link
+                                </a>
+                            </div>
+                        }
+                    />  
+
                     <div id="section-work-body">
 
                         <h2>Background</h2>

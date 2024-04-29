@@ -12,13 +12,18 @@ export const Garage=(props)=>{
                 <div className="flex flex-column section-work">
                     <WorkIntro 
                         banner={"/img/banner-garage.png"}
-                        linkHref={"https://github.com/stoneYuan3/IAT352-finalProject"}
-                        linkIcon={"/img/base/link-github.svg"}
-                        linkTitle={"View in Github"}
                         workType={"Full Stack Website"}
                         workSkill={"HTML/CSS, JQuery, PHP, MySQL, Git"}
-                        workContext={"School Project, Group, 2022"}
-                    />
+                        workContext={"School Project, Group"}
+                        time={"2022"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://github.com/stoneYuan3/IAT352-finalProject">
+                                    <img src="/img/base/link-github.svg" />Github Link
+                                </a>
+                            </div>
+                        }
+                    />                    
                     
                     <div id="section-work-body">
 

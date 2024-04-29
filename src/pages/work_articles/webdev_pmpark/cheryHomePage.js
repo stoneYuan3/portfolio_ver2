@@ -1,7 +1,6 @@
 import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
-import { WorkIntroNoBanner } from "../commonParts"
 
 export const CheryHomePage=(props)=>{
     return(
@@ -12,12 +11,12 @@ export const CheryHomePage=(props)=>{
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
                     <div id="section-work-body">
-                        <WorkIntroNoBanner 
+                        <WorkIntro 
                             workType={"Front-end development"}
                             workSkill={"HTML, CSS, Javascript"}
-                            workContext={"Front-end development Internship project, May 2023"}
-                        />
-
+                            workContext={"Front-end development Internship project"}
+                            time={"May 2023"}
+                        /> 
                         <div className="sectionList">
                             <p>This project is a practice project my supervisor gave me when I just got into the position. The task is to develop the homepage of Chery International based on design documents provided by designers. Extensive research and tests were applied in this project. Although this project serves no real purpose, it introduced me to industry standards and common technologies used by the corporation and tested my trouble-shooting skills in web development.
                             </p>

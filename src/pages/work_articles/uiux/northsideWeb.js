@@ -1,4 +1,4 @@
-import { WorkIntroNoBanner } from "../commonParts"
+import { WorkIntro } from "../commonParts"
 import { PageTitle } from "../../pages";
 import { BackToGallery } from "../commonParts";
 
@@ -10,12 +10,23 @@ export const NorthsideWeb=(props)=>{
             
             <div className="flex flex-column section-contentDisplay">
                 <div className="flex flex-column section-work">
-                    <WorkIntroNoBanner 
+
+                    <WorkIntro 
                         workType={"UI/UX Design"}
                         workSkill={"Figma, Typeform"}
-                        workContext={"School Project, Group, 2023"}
-                    />
-                    
+                        workContext={"School Project, Group"}
+                        time={"2023"}
+                        link={
+                            <div className="sectionList workIntroLinks">
+                                <a className="link" href="https://www.figma.com/proto/B1d7KWWwFYXFzblI7PGTVU/IAT-432---Assignment-4---Fall-2023?type=design&node-id=213-3&t=SbCJM4Il0r9OJaRC-0&scaling=scale-down-width&page-id=86%3A213&starting-point-node-id=213%3A3">
+                                    <img src="/img/base/link-figma.svg" />Figma Prototype Link
+                                </a>
+                                <a className="link" href="https://drive.google.com/file/d/1_5pG6IzktFkWCdBTmbqqzzuUn6BeU8Fx/view">
+                                    <img src="/img/base/link-webGeneral.svg" />Final Report 
+                                </a>
+                            </div>
+                        }
+                    />                    
                     <div id="section-work-body">
                         <h2>Background</h2>
                         <p>
@@ -28,12 +39,6 @@ export const NorthsideWeb=(props)=>{
 
                         <h2>Final Result</h2>
                         <div className="sectionList">
-                            <p>
-                                <a href="https://www.figma.com/proto/B1d7KWWwFYXFzblI7PGTVU/IAT-432---Assignment-4---Fall-2023?type=design&node-id=213-3&t=SbCJM4Il0r9OJaRC-0&scaling=scale-down-width&page-id=86%3A213&starting-point-node-id=213%3A3">Figma Prototype Link</a>
-                            </p>
-                            <p>
-                                <a href="https://drive.google.com/file/d/1_5pG6IzktFkWCdBTmbqqzzuUn6BeU8Fx/view">Final Report (17 pages in total)</a>
-                            </p>
                             <img src="/img/gallery/northsideWeb/figmaPrototype.png"/>
                             <p className="demoComments">Screenshot of our prototype</p>
                             <img src="/img/gallery/northsideWeb/figmaPrototype-compare.png"/>

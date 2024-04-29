@@ -340,6 +340,7 @@ ection-work-basics .workIntro .introColumn div{
     flex-direction: row;
     margin-right: 2rem;
     margin-bottom: 0;
+    align-items: center;
 }
 
 
@@ -671,6 +672,9 @@ figcaption{
     .section-about p{
         /* margin-right: 4rem; */
     }    
+    .section-work-basics.workIntroBox{
+        padding:1.25rem 2.25rem;
+    }
 }
 
 /* <586*/
@@ -727,5 +731,9 @@ figcaption{
     }
     .section-image-2col div img{
         height: 150px;
+    }
+
+    .section-work-basics .workIntro{
+        flex-direction: column;
     }
 }
