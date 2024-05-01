@@ -7,7 +7,8 @@ const work_riskmap =
   title: '529 Garage Risk Map Project',
   type: 'Full Stack Website',
   skill: 'HTML | CSS | JQuery | PHP | MySQL | Git',
-  context: 'School Project, Individual, 2022'
+  context: 'School Project, Individual, 2022',
+  intro: 'A full stack development project that includes design and web development with Figma, HTML, CSS, JQuery, PHP and MySQL database'
 };
 const work_garage =    
 {
@@ -16,7 +17,8 @@ const work_garage =
   title: 'Garage, Artwork Sharing Platform',
   type: 'Full Stack Website',
   skill: 'HTML | CSS | JQuery | PHP | MySQL | Git',
-  context: 'School Project, Group, 2022'
+  context: 'School Project, Group, 2022',
+  intro: 'Lead a group of three to develop a full stack project with HTML/CSS/JQuery front end and PHP/MySQL back end based on Figma design documents'
 };
 const work_edusim =   
 {
@@ -25,7 +27,8 @@ const work_edusim =
   title: 'PRC Education Simulator',
   type: 'Java Mini Game',
   skill: 'Java',
-  context: 'School Project, Individual, 2022'
+  context: 'School Project, Individual, 2022',
+  intro: 'A fun project that covers the fundamentals of Java'
 };
 
 //UIUX
@@ -36,7 +39,8 @@ const work_gardenCom =
   title: 'Community Garden Network App',
   type: 'UI/UX design',
   skill: 'User Interface | User Experience | Figma | Protopie',
-  context: 'School Project, Group, 2022'
+  context: 'School Project, Group, 2022',
+  intro: 'Designed an app for community garden user network through field-study, user interview and prototyping with Figma and Protopie'
 }
 const work_garageDesign =
 {
@@ -45,7 +49,8 @@ const work_garageDesign =
   title: 'Artwork Sharing Platform Design',
   type: 'Website Design',
   skill: 'User Interface | Web Design | Figma',
-  context: 'School Project, Individual, 2022'
+  context: 'School Project, Individual, 2022',
+  intro: 'Designed key web pages and style guides for a fictional art-sharing website using Figma'
 }
 const work_northsideWeb =
 {
@@ -54,7 +59,8 @@ const work_northsideWeb =
   title: 'Northside Foursquare Church Website Re-design',
   type: 'UI/UX design',
   skill: 'Figma | Typeform',
-  context: 'School Project, Group, 2023'
+  context: 'School Project, Group, 2023',
+  intro: 'Designed a new volunteer sign-up process for the client in a group of 3, planned and executed a full plan including user research, prototyping and user testing under time constraints'
 }
 
 //Graphic Design
@@ -65,7 +71,8 @@ const work_isaBanner =
   title: 'Research Institute Website Banners',
   type: 'Graphic Design',
   skill: 'Photoshop',
-  context: 'Internship Project, Individual, 2022'
+  context: 'Internship Project, Individual, 2022',
+  intro: 'Designed website banners using Photoshop'
 }
 const work_EDImodule =
 {
@@ -74,7 +81,8 @@ const work_EDImodule =
   title: 'Equity-Diversity-Inclusion Training Module Re-design',
   type: 'Graphic Design',
   skill: 'Articulate Storyline 360 | Illustrator',
-  context: 'Internship Project, Individual, 2022'
+  context: 'Internship Project, Individual, 2022',
+  intro: 'Re-designed the module using Articulate Storyline 360 and vector graphics from Adobe Illustrator'
 }
 const work_cmcSermon =
 {
@@ -83,7 +91,8 @@ const work_cmcSermon =
   title: 'Church Sunday Sermon Posters',
   type: 'Graphic Design',
   skill: 'Photoshop | Illustrator | Tablet Drawing',
-  context: 'Volunteer Project, Individual, 2021'
+  context: 'Volunteer Project, Individual, 2021',
+  intro: 'Using Photoshop, Illustrator and tablet drawing to create sermon posters for a local church'
 }
 const work_unsettled =
 {
@@ -92,7 +101,8 @@ const work_unsettled =
   title: 'Un/Settled Exhibition Booklet Design',
   type: 'Graphic Design',
   skill: 'Indesign | Photoshop | Illustrator',
-  context: 'School Project, Individual, 2021'
+  context: 'School Project, Individual, 2021',
+  intro: 'Designed and printed an exhibition booklet using Indesign with the target audience in mind'
 }
 const work_belgiumMissionPoster =
 {
@@ -101,7 +111,8 @@ const work_belgiumMissionPoster =
   title: 'Charleroi Concert Poster Design',
   type: 'Graphic Design',
   skill: 'Photoshop | Figma | Midjourney',
-  context: 'Volunteer Project, Individual, 2023'
+  context: 'Volunteer Project, Individual, 2023',
+  intro: 'Designed a mission poster with Photoshop, Figma and Midjourney'
 }
 
 //filming
@@ -112,7 +123,8 @@ const work_willFaliureFilm =
   title: 'Short Movie "Failure of the Will"',
   type: 'Short Movie',
   skill: 'Filming | Editing | Premier ',
-  context: 'School Project, individual, 2020'
+  context: 'School Project, individual, 2020',
+  intro: 'Produced a 1-minute film from plotting to filming, editing with Premier and sound effect making'
 }
 
 
@@ -124,7 +136,8 @@ const work_jeTourMap =
   title: 'Jetour Partner Map Development',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Javascript | Vue.js ',
-  context: 'Internship Project, individual, 2023'
+  context: 'Internship Project, individual, 2023',
+  intro: 'Fixing the interface of Jetour’s global partner map with HTML, CSS, Jquery and a bit of Vue.js'
 }
 const work_jeTourDemo1 = 
 {
@@ -133,7 +146,8 @@ const work_jeTourDemo1 =
   title: 'Jetour Home Page Demo',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Javascript ',
-  context: 'Internship Project, individual, 2023'
+  context: 'Internship Project, individual, 2023',
+  intro: 'Develop a demo based on design documents for client view with HTML, CSS, Jquery and Swiper.js, featuring complex banner animation'
 }
 const work_cheryHomePage = 
 {
@@ -142,7 +156,8 @@ const work_cheryHomePage =
   title: 'Chery International Home Page Development',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Javascript ',
-  context: 'Internship Project, individual, 2023'
+  context: 'Internship Project, individual, 2023',
+  intro: 'Develop a demo based on design documents for client view with HTML, CSS, Jquery and Swiper.js, featuring complex banner animation'
 }
 const work_wcwlBadge = 
 {
@@ -151,7 +166,8 @@ const work_wcwlBadge =
   title: 'Chery International Co-Create Campaign',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Javascript ',
-  context: 'Internship Project, individual, 2023'
+  context: 'Internship Project, individual, 2023',
+  intro: 'Develop a demo based on design documents for client view with HTML, CSS, Jquery and Swiper.js'
 }
 
 
@@ -162,7 +178,8 @@ const work_sela =
   title: 'Sela Bible Poetry Analysis App',
   type: 'Front-end Web Development Project',
   skill: 'HTML/CSS | Typescript | React.js | Git ',
-  context: 'Ongoing Volunteer Project, Group, 2023'
+  context: 'Ongoing Volunteer Project, Group, 2023',
+  intro: 'Work with a small non-profit organization to develop the front end interface of a bible poetry reader with React.js and Typescript'
 }
 
 

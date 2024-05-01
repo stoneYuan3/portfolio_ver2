@@ -48,6 +48,7 @@ export const GalleryContent = (props) => {
                         skill={each.skill}
                         type={each.type}
                         context={each.context}    
+                        intro={each.intro}  
                     />
                 ))}
             </div>
@@ -67,7 +68,8 @@ export const GalleryContent = (props) => {
 export const Gallery = (props) => {
     return(
         <>
-            <PageTitle title="Gallery" />
+            {/* <PageTitle title="Gallery" /> */}
+            <GalleryIntro backlink={props.backlink}/>
             <NavGallery navType={props.navType} page={props.page} backlink={props.backlink}/>
             <GalleryContent content={props.content}/>
             <Outlet />
@@ -84,6 +86,31 @@ export const GalleryNoNav = (props) => {
     );
 }
 
+const GalleryIntro = (props) => {
+
+    var backlink="";
+    if(props.backlink!=null){
+        backlink=props.backlink;
+    }
+    else{
+        backlink="";
+    }
+
+    return(
+        <>
+        <div className="galleryIntro">
+            <div className="galleryIntroName">
+                <p>Shucong</p>
+                <p>(Jack)</p>
+                <p>Yuan</p>
+            </div>
+            <p className="charaTags">
+                Programmer, Designer, <Link to={backlink+"/playground/hanfuMaking"}>Tailor</Link>, Artist, <a href="https://www.flickr.com/photos/200092524@N07/">Photographer</a>, Gardener, Tea Drinker, <a href="https://store.steampowered.com/app/359320/Elite_Dangerous/" className="slash">Elite: Dangerous Commander</a>... and <Link to={backlink+"/playground"}>More</Link>.
+            </p>
+        </div>
+        </>
+    );
+}
 
 export const Playground = (props) => {
     return(
@@ -110,9 +137,9 @@ export const AboutMe = (props) => {
                             <p><strong>Telephone: </strong>778-223-9805</p>
                         </div>
                     </div>
-                    <p className="charaTags">
+                    {/* <p className="charaTags">
                         Programmer, Designer, <a href="https://syuan-portfolio.netlify.app/webdev/playground/hanfuMaking">Talior</a>, Artist, <a href="https://www.flickr.com/photos/200092524@N07/">Photographer</a>, Gardener, Tea Drinker, <a href="https://store.steampowered.com/app/359320/Elite_Dangerous/" className="slash">Elite: Dangerous Commander</a>... and More.
-                    </p>
+                    </p> */}
                     <p>
                         Studies at Simon Fraser University, School of Interactive Arts and Technology (Bachelor of Art)				
                     </p>
