@@ -77,14 +77,17 @@ export const NavMain = (props) => {
 
                 <div className="links-external">
                     <a className="flex flex-align-center" href="https://github.com/stoneYuan3"><img src="/img/base/link-github.svg" />Github</a>
-                    <a className="flex flex-align-center" href="https://www.linkedin.com/in/jack-yuan-10a269222/"><img src="/img/base/link-linkedin.svg" />Linkedin</a>
+                    <a className="flex flex-align-center" href="https://www.linkedin.com/in/stone-yuan-10a269222/"><img src="/img/base/link-linkedin.svg" />Linkedin</a>
 
                     <a className="flex flex-align-center" href="https://www.flickr.com/photos/200092524@N07/"><img src="/img/base/link-flickr.svg" />Flickr</a>
+                    <a className="flex flex-align-center" href="https://www.instagram.com/jackyuan110/"><img src="/img/base/link-instagram.svg" />Instagram</a>
                 </div>
 
                 <div className="links-external links-external-small">
                     <a className="flex flex-align-center" href="https://github.com/stoneYuan3"><img src="/img/base/link-github.svg" /></a>
                     <a className="flex flex-align-center" href="https://www.linkedin.com/in/jack-yuan-10a269222/"><img src="/img/base/link-linkedin.svg" /></a>
+                    <a className="flex flex-align-center" href="https://www.flickr.com/photos/200092524@N07/"><img src="/img/base/link-flickr.svg" /></a>
+                    <a className="flex flex-align-center" href="https://www.instagram.com/jackyuan110/"><img src="/img/base/link-instagram.svg" /></a> 
                 </div>
             </nav>
         </header>
