@@ -65,7 +65,7 @@ export const NavMain = (props) => {
                     {/* <Link onClick={() => {setPage("gallery"); scrollToTop(); NavGallery.resetPage()}} to={homelink}> */}
                     <Link onClick={() => {setPage("gallery"); scrollToTop();}} to={homelink}>
                         <img src="/img/base/logo.svg" />
-                        <p>Jack Yuan</p>
+                        <p>Stone Yuan</p>
                     </Link>
                 </div>
 
