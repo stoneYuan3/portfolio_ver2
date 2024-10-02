@@ -101,7 +101,7 @@ const GalleryIntro = (props) => {
         <div className="galleryIntro">
             <div className="galleryIntroName">
                 <p>Shucong</p>
-                <p>(Jack)</p>
+                <p>(Stone)</p>
                 <p>Yuan</p>
             </div>
             <p className="charaTags">
@@ -131,7 +131,7 @@ export const AboutMe = (props) => {
                     <div className="flex flex-row section-mybio">
                         {/* <img src="/img/about-portrait.png" /> */}
                         <div className="flex flex-column">
-                            <h2>Shucong (Jack) Yuan</h2>
+                            <h2>Shucong (Stone) Yuan</h2>
                             {/* <p><strong>Email: </strong>jack_yuan@sfu.ca (Preferred)</p> */}
                             <p><strong>Email: </strong>jackyuan110@gmail.com (Preferred)</p>
                             <p><strong>Telephone: </strong>778-223-9805</p>
